@@ -1,0 +1,70 @@
+/*Police générale de la page*/
+@font-face {font-family: "montserrat";
+      src: url(../fonts/montserrat/Montserrat-Medium.ttf)}
+@font-face {font-family: "motionpicture";
+            src: url(../fonts/motionpicture/MotionPicture_PersonalUseOnly.ttf)}
+@font-face {font-family: "merriweather";
+            src: url(../fonts/merriweather/Merriweather-Black.ttf)}
+
+
+body{font-family: montserrat;
+      margin:0;}
+
+/*Navigation Bar verte*/
+#div-green{background-color:#08B597;
+            padding:10px 10px;}
+
+.div-width{width: 980px;
+            margin:0 auto;}
+
+.nav1 {list-style-type: none;
+       margin: 0;
+       padding: 0;}
+
+#menu1 {text-decoration: none;
+            color: white; 
+            font-size: 10px;
+            text-transform: uppercase;
+            margin-right: 10px;}
+
+li{display: inline;}
+
+/*Navigation Bar blanche*/
+.div-height {height:30px;
+            margin-bottom:90px; }
+h1{font-family: motionpicture;
+      text-align: center;
+      font-size:50px;
+      font-weight:normal;
+      margin:0;}
+
+.txt-grey{color:#717171;}
+.txt-green{color:#08B597;}
+
+.nav2 {list-style-type: none;
+      margin: 0;
+      padding:0;}
+
+hr {opacity: 0.2}
+
+#menu2 {text-decoration: none;
+            color: #707070;
+            display: inline;
+            font-size: 10px;
+            text-transform: uppercase;
+            margin-right: 10px;
+            padding-bottom:5px;}
+
+/*Div containing background picture*/
+.div-img {background-image:
+            linear-gradient(
+             rgba(0, 0, 0, 0.30), 
+             rgba(0, 0, 0, 0.30)),
+            url("../img/fond-top.jpg");
+            height:600px;
+            background-repeat: no-repeat;
+            background-size:100%;}
+
+p {font-family: merriweather;
+      color:white;
+      font-size:30px;}
