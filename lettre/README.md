@@ -1,3 +1,2 @@
 # Lettre
-**Falana est une machine de guerre dans cette classe
-**
+**Falana est une machine de guerre dans cette classe**
