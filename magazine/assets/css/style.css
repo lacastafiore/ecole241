@@ -1,70 +1,158 @@
 /*Police générale de la page*/
-@font-face {font-family: "montserrat";
-      src: url(../fonts/montserrat/Montserrat-Medium.ttf)}
-@font-face {font-family: "motionpicture";
-            src: url(../fonts/motionpicture/MotionPicture_PersonalUseOnly.ttf)}
-@font-face {font-family: "merriweather";
-            src: url(../fonts/merriweather/Merriweather-Black.ttf)}
+@font-face {
+      font-family: "montserrat";
+      src: url(../fonts/montserrat/Montserrat-Bold.ttf)
+}
+body{
+      font-family: montserrat;
+      margin:0;
+                              }
 
 
-body{font-family: montserrat;
-      margin:0;}
+/*Green navigation bar with menu and icons*/
+#div-green {
+            background-color:#08B597;
+            padding:10px 10px;
+}
 
-/*Navigation Bar verte*/
-#div-green{background-color:#08B597;
-            padding:10px 10px;}
+.div-width {
+            width: 950px;
+            margin:0 auto;
+}
 
-.div-width{width: 980px;
-            margin:0 auto;}
+.nav1 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+}
 
-.nav1 {list-style-type: none;
-       margin: 0;
-       padding: 0;}
+/*Navigation menu*/
+#menu1 { 
+      text-decoration: none;
+      color: white; 
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-right: 10px;
+}
 
-#menu1 {text-decoration: none;
-            color: white; 
-            font-size: 10px;
-            text-transform: uppercase;
-            margin-right: 10px;}
+li {display: inline;}
 
-li{display: inline;}
 
-/*Navigation Bar blanche*/
-.div-height {height:30px;
-            margin-bottom:90px; }
-h1{font-family: motionpicture;
-      text-align: center;
-      font-size:50px;
+/*Icons*/
+.right{float:right;}
+.icon-white{color:white;}
+.icon-margin{margin-left: 8px;}
+.search-icon-margin{margin-left: 30px;}
+
+/*Div containing DeshiMag & white navigation bar*/
+/*DeshiMag*/
+@font-face {
+            font-family: "motionpicture";
+            src: url(../fonts/motionpicture/MotionPicture_PersonalUseOnly.ttf)
+}
+
+.deshi-font {
+      font-family: motionpicture;
+      font-size: 55px;
       font-weight:normal;
-      margin:0;}
+      text-align: center;
+      margin:0;
+}
+/*White navigation bar*/
+.div-height-30 {
+            height:30px;
+            margin-bottom:90px;
+}
+
+
 
 .txt-grey{color:#717171;}
 .txt-green{color:#08B597;}
 
-.nav2 {list-style-type: none;
+.nav2 {
+      list-style-type: none;
       margin: 0;
-      padding:0;}
+      padding:0;
+}
 
-hr {opacity: 0.2}
+hr {
+      opacity: 0.2;
+      margin-bottom: 10px;
+}
 
-#menu2 {text-decoration: none;
-            color: #707070;
-            display: inline;
-            font-size: 10px;
-            text-transform: uppercase;
-            margin-right: 10px;
-            padding-bottom:5px;}
+#menu2 {
+      text-decoration: none;
+      color: #707070;
+      display: inline;
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-right: 20px;
+      padding-bottom:5px;
+}
 
-/*Div containing background picture*/
-.div-img {background-image:
-            linear-gradient(
-             rgba(0, 0, 0, 0.30), 
-             rgba(0, 0, 0, 0.30)),
-            url("../img/fond-top.jpg");
-            height:600px;
-            background-repeat: no-repeat;
-            background-size:100%;}
+/*Div containing background picture, button with paragraph & 4 images*/
+/*Background picture*/
+.bg-img {
+      background-image:linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)),url("../img/fond-top.jpg");
+      width: 100%;
+      height:600px;
+      background-repeat: no-repeat;
+      background-size:cover;
+}
 
-p {font-family: merriweather;
+/*button with paragraph*/
+/*Button*/
+.round-button{
+            background-color: #08B597;
+            border: none;
+            color: white;
+            margin-top:170px;
+            margin-bottom: 10px;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            font-family: montserrat;
+            font-size: 11px;
+            border-radius: 30px;
+            cursor: pointer;
+}
+
+/*Paragraph*/
+@font-face {
+      font-family: "merriweather";
+      src: url(../fonts/merriweather/Merriweather-Bold.ttf)
+}
+
+span {
+      font-family: merriweather;
       color:white;
-      font-size:30px;}
+      font-size:40px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-top:10px;
+}
+
+.date {
+      color:white;
+      font-size: 9.5px;
+   
+}
+
+/*4 images*/
+.div-img-inline{
+      display:inline;
+}
+
+.block{
+      display: block;
+      margin-bottom: 10px;
+      }
+.images-mg-t-80{margin-top: 80px;}
+.image-mg-l-20{margin-left:20px;}
+.image-mg-r-20{margin-right:20px;}
+.bg-white{background-color: white;}
+.width-30{width:150px;
+      height:120px;
+}
+.width-cover{width:500px;}
