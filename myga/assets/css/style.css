@@ -1,0 +1,141 @@
+*{
+     margin-top: 0;
+}
+body{
+     margin: 0;
+}
+.container{
+     height: 100vh;
+     background-color: rgba(235, 233, 233, 0.945);
+}
+/**Block menu fixed**/
+aside{
+     position: fixed;
+     float: left;
+     height: 100vh;
+     width: 15%;
+     background-color: rgb(226, 226, 222);
+}
+/**Logo**/
+@font-face {
+     font-family: 'logo-font';
+     src: url('../fonts/spartan-bold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+   }
+p{
+     text-align: center;
+     padding: 0;
+     margin: 0;
+}
+.ga{
+     font-family: 'logo-font';
+     font-size: 70px;
+     text-decoration: none;
+     width: 110px;
+}
+#point{
+     font-family: 'logo-font';
+     color:#EACA15;
+}
+#ga{
+     color: #125204;
+}
+/**Side Menu**/
+.menu-container{
+     height: 250px;
+     width: 100%;
+     position: relative;
+     top: 180px;
+}
+aside a {
+     text-decoration: none;
+}
+#menu-principal, #menu-principal ul{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     font-size: 13px;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+#menu-principal ul{
+     display: none;
+}
+#menu-principal li {
+     position: relative;
+}
+#menu-principal>li a {
+     display: block;
+     width:143px;
+     height: 50px;
+     line-height: 50px;
+     color: rgb(34, 30, 30);
+     text-align: justify;
+     padding-left: 50px;
+}
+#menu-principal>li:hover a{
+     background-color:  	rgb(96, 124, 38);
+     color: white;
+}
+#menu-principal>li:hover ul li a{
+     color: #EACA15;
+}
+/**Block cover & register**/
+.right{
+     float: right;
+     height:100vh;
+     width: 85%;
+}
+.cover{
+     height: 100%;
+     background-image: url(../images/gabon16.jpg);
+     background-size: cover;
+     background-position: center;
+}
+.title-container {
+     position: relative;
+     background-color:rgb(96, 124, 38);
+     top: 250px;
+     height: 200px;
+}
+h3 {
+     text-align: center;
+     font-family: 'Thasadith', sans-serif;
+     color: rgb(34, 30, 30);
+     font-weight: bold;
+}
+h1 {
+     text-align: center;
+     top: 90px;
+     font-family: 'Thasadith', sans-serif;
+     font-size: 35px;
+     font-weight: lighter;
+     color:rgb(194, 192, 192);
+}
+.form {
+     margin: 60px auto;
+     background-color: whitesmoke;
+     height: 67px;
+     width: 500px;
+     border-radius: 40px;
+}
+input[placeholder] {
+     margin: 13px 30px;
+     padding:0 20px;
+     height: 40px;
+     width: 295px;
+     border: none;
+     background-color: whitesmoke;
+}
+#submit {
+     border: none;
+     border-radius: 30px;
+     background-color: #EACA15;
+     height: 55px;
+     width: 90px;
+}
+.register{
+     height:100%;
+     background-color: chocolate;
+}
