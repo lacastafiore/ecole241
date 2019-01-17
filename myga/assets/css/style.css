@@ -8,10 +8,13 @@ body{
      height: 100vh;
      background-color: rgba(235, 233, 233, 0.945);
 }
-/**Block menu fixed**/
+/**Side menu fixed**/
 aside{
      position: fixed;
-     float: left;
+     justify-content: space-between;
+     display: flex;
+     flex-direction: column;
+     /* float: left; */
      height: 100vh;
      width: 15%;
      background-color: rgb(226, 226, 222);
@@ -46,7 +49,7 @@ p{
      height: 250px;
      width: 100%;
      position: relative;
-     top: 180px;
+     top: 45px;
 }
 aside a {
      text-decoration: none;
@@ -81,6 +84,19 @@ aside a {
 #menu-principal>li:hover ul li a{
      color: #EACA15;
 }
+/**language**/
+#lang {
+     list-style-type: none;
+}
+#lang li {
+     display: inline-block;
+}
+#lang li a {
+     font-family: 'Thasadisth', sans-serif;
+     font-size: 10px;
+     text-transform: uppercase;
+     color: rgb(43, 42, 37);
+}
 /**Block cover & register**/
 .right{
      float: right;
@@ -92,6 +108,18 @@ aside a {
      background-image: url(../images/gabon16.jpg);
      background-size: cover;
      background-position: center;
+}
+#login {
+    text-align: right;
+}
+button {
+     border: none;
+     border-radius: 10px;
+     margin-top: 10px;
+     margin-right: 40px;
+     width: 100px;
+     height: 40px;
+     background-color: #EACA15;
 }
 .title-container {
      position: relative;

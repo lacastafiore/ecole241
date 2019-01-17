@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+ Site officiel de la cohorte de développeur de l'école241 2018
+-->
+<html>
+
+<head>
+	<title>OkaCode - Développeurs Web</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="images/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		.mozaique {
+			background: white;
+			padding-top: 10px;
+			border-radius: 4px;
+		}
+
+		.moz8 {
+			position: relative;
+			display: inline-block;
+			width: 100px;
+			height: 150px;
+			transition: all 200ms ease-in;
+			transform: scale(1);
+		}
+
+		.moz8:hover {
+			box-shadow: 0px 0px 150px #000000;
+			z-index: 2;
+			transition: all 200ms ease-in;
+			transform: scale(1.5);
+		}
+
+		.moz6 {
+			position: relative;
+			display: inline-block;
+			width: 100px;
+			height: 150px;
+			transition: all 200ms ease-in;
+			transform: scale(1);
+		}
+
+		.moz6:hover {
+			box-shadow: 0px 0px 150px #000000;
+			z-index: 2;
+			transition: all 200ms ease-in;
+			transform: scale(1.5);
+		}
+
+		.blank {
+			display: inline-block;
+			width: 100px;
+			height: 150px;
+			background: #3FB992;
+		}
+
+		img[id=logo] {
+			animation-duration: 2s;
+			animation-delay: 120s;
+			animation-iteration-count: infinite;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<nav>
+			<a href="#apropos">A propos</a>
+			<a href="#equipe">Equipe</a>
+			<a href="#actualite">Actualité</a>
+			<a href="#solutions">Solutions</a>
+			<a href="#forum">Forum</a>
+			<a href="#contacts" id="border-n">Contacts</a>
+		</nav>
+		<div class="inner">
+			<img id="logo" src="images/logo.png" alt="" class="animated infinite jello delay-2s">
+			<!-- <img id="logo" src="images/logo.png" alt="" class="animated infinite tada delay-2s"> -->
+			<p>Cohorte des Développeurs de l'<a href="https://ecole241.org/">école241</a> (promotion 2018)</p>
+		</div>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Banner -->
+		<section id="intro" class="main">
+			<h2>Qui sommes nous?</h2>
+			<p>Un groupe de jeunes développeurs dévoués et amoureux du code. Notre objectif premier étant de mettre nos
+				connaissances et compétences de programmeur au service des entreprises et des particulier. </p>
+			<ul class="actions">
+				<li><a href="#" class="button big">Learn More</a></li>
+			</ul>
+		</section>
+
+		<!-- Items -->
+		<section class="main items">
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/moz2.jpg" alt="" /></a>
+					<h3>Les femmes d'OkaCode</h3>
+				</header>
+				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est,
+					eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">More</a></li>
+				</ul>
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/moz1.jpg" alt="" /></a>
+					<h3>Les hommes d'OkaCode</h3>
+				</header>
+				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est,
+					eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">More</a></li>
+				</ul>
+			</article>
+		</section>
+		<!-- Mosaique -->
+		<section class="mozaique">
+			<div class="moz-l-1" align="center">
+				<div class="moz8"><img src="images/Kakashi.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Axel.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Billy.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Boris.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Boumys.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Didier.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Din.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Grace.jpg" alt="" class="moz8"></div>
+			</div>
+			<div class="moz-l-2" align="center">
+				<div class="blank" class="moz6"></div>
+				<div class="moz6"><img src="images/Francois.jpg" alt="" class="moz6"></div>
+				<div class="moz6"><img src="images/Gabin.jpg" alt="" class="moz6" title="Moundziegou Gabin, 23 ans"></div>
+				<div class="moz6"><img src="images/Hamilton.jpg" alt="" class="moz6"></div>
+				<div class="moz6"><img src="images/Ismael.jpg" alt="" class="moz6"></div>
+				<div class="moz6"><img src="images/Ivan.jpg" alt="" class="moz6"></div>
+				<div class="moz6"><img src="images/Joe.jpg" alt="" class="moz6"></div>
+				<div class="blank" class="moz6"></div>
+			</div>
+			<div class="moz-l-3" align="center">
+				<div class="moz8"><img src="images/Leticia.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Kevinn.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Laurion.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Noel.jpg" alt="" title="Mébale Noel, 28 ans" class="moz8"></div>
+				<div class="moz8"><img src="images/Pierre.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Sisso.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Yannick.jpg" alt="" class="moz8"></div>
+				<div class="moz8"><img src="images/Line.jpg" alt="" class="moz8"></div>
+			</div>
+		</section>
+	</div>
+
+	<!--Footer-before-->
+	<div id="footer-before">
+		<blockquote>
+			<p>Avant de vouloir qu’un logiciel soit réutilisable, il faudrait<br> d’abord qu’il ait été utilisable<br>
+				<span>-</span>
+				<span id="author">Ralph Johnson</span>
+			</p>
+		</blockquote>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		</div class="wrapper">
+		<ul class="icons" style="display:inline-block;margin-left: 8%;">
+			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<p class="copyright" style="display:inline-block;margin-left:45%;">&copy; OkaCode Design: <a href=#>OkaPanthère</a>.
+			Images: <a href=https://www.facebook.com/yvanhrolly.nzassi?ref=br_rs>Yvan Nzassi</a>. </p> </div> </footer> </body>
+			 </html>
