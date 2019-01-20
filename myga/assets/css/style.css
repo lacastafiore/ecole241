@@ -1,15 +1,18 @@
-*{
+* {
      margin-top: 0;
 }
-body{
+
+body {
      margin: 0;
 }
-.container{
+
+.container {
      height: 100vh;
      background-color: rgba(235, 233, 233, 0.945);
 }
+
 /**Side menu fixed**/
-aside{
+aside {
      position: fixed;
      justify-content: space-between;
      display: flex;
@@ -19,42 +22,51 @@ aside{
      width: 15%;
      background-color: rgb(226, 226, 222);
 }
+
 /**Logo**/
 @font-face {
      font-family: 'logo-font';
      src: url('../fonts/spartan-bold.ttf') format('truetype');
      font-weight: bold;
      font-style: normal;
-   }
-p{
+}
+
+p {
      text-align: center;
      padding: 0;
      margin: 0;
 }
-.ga{
+
+.ga {
      font-family: 'logo-font';
      font-size: 70px;
      text-decoration: none;
      width: 110px;
 }
-#point{
+
+#point {
      font-family: 'logo-font';
-     color:#EACA15;
+     color: #EACA15;
 }
-#ga{
+
+#ga {
      color: #125204;
 }
+
 /**Side Menu**/
-.menu-container{
+.menu-container {
      height: 250px;
      width: 100%;
      position: relative;
      top: 45px;
 }
+
 aside a {
      text-decoration: none;
 }
-#menu-principal, #menu-principal ul{
+
+#menu-principal,
+#menu-principal ul {
      font-family: 'Montserrat', sans-serif;
      font-weight: bold;
      font-size: 13px;
@@ -62,56 +74,68 @@ aside a {
      padding: 0;
      margin: 0;
 }
-#menu-principal ul{
+
+#menu-principal ul {
      display: none;
 }
+
 #menu-principal li {
      position: relative;
 }
+
 #menu-principal>li a {
      display: block;
-     width:143px;
+     width: 143px;
      height: 50px;
      line-height: 50px;
      color: rgb(34, 30, 30);
      text-align: justify;
      padding-left: 50px;
 }
-#menu-principal>li:hover a{
-     background-color:  	rgb(96, 124, 38);
+
+#menu-principal>li:hover a {
+     background-color: rgb(96, 124, 38);
      color: white;
 }
-#menu-principal>li:hover ul li a{
+
+#menu-principal>li:hover ul li a {
      color: #EACA15;
 }
+
 /**language**/
 #lang {
      list-style-type: none;
 }
+
 #lang li {
      display: inline-block;
 }
+
 #lang li a {
      font-family: 'Thasadisth', sans-serif;
      font-size: 10px;
      text-transform: uppercase;
      color: rgb(43, 42, 37);
 }
+
 /**Block cover & register**/
-.right{
+.right {
      float: right;
-     height:100vh;
+     height: 100vh;
      width: 85%;
 }
-.cover{
+
+.cover {
      height: 100%;
-     background-image: url(../images/gabon16.jpg);
+     background-image: url('../images/gabon16.jpg');
      background-size: cover;
      background-position: center;
 }
+
 #login {
-    text-align: right;
+     text-align: right;
 }
+
 button {
      border: none;
      border-radius: 10px;
@@ -121,41 +145,48 @@ button {
      height: 40px;
      background-color: #EACA15;
 }
+
 .title-container {
      position: relative;
-     background-color:rgb(96, 124, 38);
+     background-color: rgb(96, 124, 38);
      top: 250px;
      height: 200px;
 }
+
 h3 {
      text-align: center;
      font-family: 'Thasadith', sans-serif;
      color: rgb(34, 30, 30);
      font-weight: bold;
 }
+
 h1 {
+     padding-top: 40px;
+     margin-bottom: 0;
      text-align: center;
-     top: 90px;
      font-family: 'Thasadith', sans-serif;
      font-size: 35px;
      font-weight: lighter;
-     color:rgb(194, 192, 192);
+     color: rgb(194, 192, 192);
 }
+
 .form {
-     margin: 60px auto;
+     margin: 20px auto;
      background-color: whitesmoke;
      height: 67px;
      width: 500px;
      border-radius: 40px;
 }
+
 input[placeholder] {
      margin: 13px 30px;
-     padding:0 20px;
+     padding: 0 20px;
      height: 40px;
      width: 295px;
      border: none;
      background-color: whitesmoke;
 }
+
 #submit {
      border: none;
      border-radius: 30px;
@@ -163,7 +194,8 @@ input[placeholder] {
      height: 55px;
      width: 90px;
 }
-.register{
-     height:100%;
+
+.register {
+     height: 100%;
      background-color: chocolate;
 }

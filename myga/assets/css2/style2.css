@@ -1,0 +1,155 @@
+/* Font of the entire page */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.60)
+}
+
+header ul:first-of-type a {
+    color: #125204;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header ul:last-of-type a {
+    color: #125204;
+    font-weight: light;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+header ul a:hover {
+    color: #EACA15;
+}
+
+/* Logo */
+@font-face {
+    font-family: 'spartan-bold';
+    src: url('../fonts/spartan-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.ga {
+    font-family: 'spartan-bold', sans-serif;
+    font-size: 3em;
+}
+
+#point {
+    color: #EACA15;
+}
+
+#ga {
+    color: #14420a;
+}
+
+/* Content */
+.container-fluid {
+    padding-left: 0;
+}
+
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url('../images/gabon14.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 86vh;
+}
+
+.transparent {
+    height: 100%;
+    width: 30%;
+    padding-top: 2em;
+    opacity: 0.8;
+    background: #17290F;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: bolder;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50)
+}
+
+.search-box {
+    width: auto;
+}
+
+[placeholder="Find a domain name"] {
+    height: 60px;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    font-size: 26px;
+    font-weight: 300;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.50)
+}
+
+#submit {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    color: #EACA15;
+    height: 36px;
+    width: 35px;
+    padding: 0;
+    bottom: 45px;
+    right: 10px;
+}
+
+i {
+    font-weight: 500;
+    font-size: 35px;
+    color: #EACA15;
+}
+
+i:hover {
+    color: rgb(234, 167, 21);
+}
+
+.container-fluid a {
+    text-decoration: none;
+}
+
+.container p {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+#domain {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 765px;
+}
+
+#free {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 5px;
+}
+
+#arrow {
+    position: absolute;
+    color: white;
+    font-size: 0.9em;
+    bottom: 7px;
+    left: 240px;
+    transition: all 0.3s ease 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}

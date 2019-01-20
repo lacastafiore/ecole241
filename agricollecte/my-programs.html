@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Agri-collecte</title>
+</head>
+
+<body class="bg-beige-agri">
+
+    <!-- navbar -->
+    <nav class="nav-extended">
+        <div class="nav-wrapper bg-white">
+            <ul class="right">
+                <li id="search-icon"><a href="#"><i class="material-icons text-green-agri">search</i></a></li>
+            </ul>
+            <form style="width: 100%; position:absolute; z-index: 1; display: none;" id="search-form">
+                <div class="input-field" id="search-div">
+                    <input id="search" type="search" placeholder="Recherche">
+                    <label class="label-icon" for="search"></label>
+                    <i class="material-icons" id="close">close</i>
+                </div>
+            </form>
+            <a href="#" id="logo" class="brand-logo"><img src="images/logo.png" width="130" alt=""></a>
+            <a href="#" id="menu" data-target="mobile-demo" class="sidenav-trigger text-green-agri" style="position:relative; z-index: 0;"><i class="material-icons">menu</i></a>
+        </div>
+        <div class="nav-content bg-green-agri" style="padding:1px;">
+            <h5 class="text-center">CAMPAGNES</h5>
+        </div>
+        <div class="nav-content bg-green-agri">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="my-programs.html">créées</a></li>
+                <li class="tab"><a class="active" href="index.html">Participées</a></li>
+                <li class="tab"><a href="#test3">Publiques</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view" style="font-weight: bold;">
+                <div class="background">
+                    <img src="images/10.jpg" alt="exemple">
+                </div>
+                <a href="#user"><img class="circle" src="images/avatar.png" alt="exemple"></a>
+                <a href="#name"><span class="white-text">FADIKPE I. Juste</span></a><br>
+                <a href="#email"><span class="white-text">Agriculteur</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class='material-icons'>edit</i>Editer Profil</a></li>
+        <li><a href="#!"><i class='material-icons'>notifications</i>Notifications</a></li>
+        <li><a href="#!"><i class='material-icons'>location_on</i>Libreville</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="index.html"><i class='material-icons'>info_outline</i>A propos de l'APP</a></li>
+        <li><a class="waves-effect" href="index.html"><i class='material-icons'>exit_to_app</i>Déconnexion</a></li>
+    </ul>
+    <main>
+        <!-- Modal Trigger -->
+
+        <div class="row mt-20 container-fluid">
+            <div class="col s12">
+                <a href="#modal1" data-position="bottom" data-tooltip="Ajouter une campagne" class="tooltipped btn-floating btn-large bg-green-agri waves-effect waves-light modal-trigger"><i class="material-icons">add</i></a>
+            </div>
+        </div>
+        <div class="row px-10">
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="images/3.jpg" alt="avocat" class=" materialboxed circle">
+                    <span class="title text-bold">-- Avocato --</span>
+                    <p>
+                        <small>Créé le 25/10/2018</small><br>
+                        <small class="badge blue text-white p-5">En cours</small><br>
+                        <span style="display: block;" class="mt-10">
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Voir">remove_red_eye</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Modifier">edit</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Supprimer">delete</i></a>
+                        </span>
+                    </p>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/20.jpg" alt="avocat" class=" materialboxed circle">
+                    <span class="title text-bold">-- TomLabs --</span>
+                    <p>
+                        <small>Créé le 12/11/2018</small><br>
+                        <small class="badge red text-white p-5">Terminée</small><br>
+                        <span style="display: block;" class="mt-10">
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Voir">remove_red_eye</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Modifier">edit</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Supprimer">delete</i></a>
+                        </span>
+                    </p>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/3.jpg" alt="avocat" class=" materialboxed circle">
+                    <span class="title text-bold">-- Simplon-241 --</span>
+                    <p>
+                        <small>Créé le 12/11/2018</small><br>
+                        <small class="badge red text-white p-5">Terminée</small><br>
+                        <span style="display: block;" class="mt-10">
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Voir">remove_red_eye</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Modifier">edit</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Supprimer">delete</i></a>
+                        </span>
+                    </p>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/3.jpg" alt="avocat" class=" materialboxed circle">
+                    <span class="title text-bold">-- Campagne241 --</span>
+                    <p>
+                        <small>Créé le 12/11/2018</small><br>
+                        <small class="badge red text-white p-5">Terminée</small><br>
+                        <span style="display: block;" class="mt-10">
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Voir">remove_red_eye</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Modifier">edit</i></a>&nbsp;
+                            <a href="#"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Supprimer">delete</i></a>
+                        </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <!-- Modal Structure 1  -->
+        <div id="modal1" class="modal">
+            <h5 class="text-center">Nouvelle campagne</h5>
+            <div class="modal-content" style="padding:5px;">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="#" method="post">
+                            <select class="browser-default">
+                                <option value="" disabled selected>Choisissez le type</option>
+                                <option value="1">Prix</option>
+                                <option value="2">Marchandise</option>
+                                <option value="3">Collecte</option>
+                            </select>
+                            <div class="input-field input-field-reset">
+                                <input type="text" id="pseudo" class="validate">
+                                <label for="pseudo" data-error="wrong" data-success="right">Nom</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea id="description" class="materialize-textarea"></textarea>
+                                <label for="description">Description</label>
+                            </div>
+                            <div class="step-actions">
+                                <!-- Here goes your actions buttons -->
+                                <button class="waves-effect waves-dark btn next-step">AJOUTER</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Structure 1-->
+
+        <!-- Modal Structure 2-->
+        <div id="modal2" class="modal">
+            <h5 class="text-center">Ajout d'un formulaire</h5>
+            <div class="modal-content" style="padding:0;">
+                <div class="row">
+                    <div class="col s12" style="padding:0;">
+                        <ul class="tabs">
+                            <li class="tab col s3 active"><a href="#test1">Test 1</a></li>
+                            <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                        </ul>
+                    </div>
+                    <div id="test1" class="col s12">Test 1</div>
+                    <div id="test2" class="col s12">Test 2</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Structure 2-->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Agri-collecte</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12">
+                <p class="center-align">
+                    <img src="images/logo.png" class="w-300" alt="logo">
+                </p>
+                <form action="my-programs.html" method="post" class="my-10 px-10">
+                    <div class="input-field input-field-reset">
+                        <input type="text" id="pseudo" class="validate">
+                        <label for="pseudo" data-error="wrong" data-success="right">Pseudo</label>
+                    </div>
+                    <div class="input-field input-field-reset mb-30">
+                        <input type="password" id="mdp" class="validate">
+                        <label for="mdp" data-error="wrong" data-success="right"><i class="material-icons">lock</i></label>
+                    </div>
+                    <button class="btn waves-effect waves-light btn-large bg-green-agri" type="submit" name="action">Connexion</button>
+                </form>
+                <p class="center-align">
+                    <small><a href="password-forget.html" class="text-warning-agri">Mot de passe oublié ?</a></small><br>
+                    <small><a href="inscription.html" class="text-warning-agri">S'inscrire</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
