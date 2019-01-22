@@ -141,19 +141,28 @@ span {
 /*4 images*/
 .div-img-inline{
       display:inline;
+      position: relative;
 }
       .img-txt {
+            font-size: 0.5em;
             color: white;
             position: absolute;
             z-index: 1;
+            bottom: 40px;
+            left: 25px;
       }      
             .img-txt a {
                   text-decoration: none;
                   color: white;
                   display: block;
                   font-family: "merriweather";
-                  font-size: 15px;
+                  font-size: 12px;
+                  letter-spacing: 0.8px;
                   width: 100%;
+            }
+            .img-txt small {
+                  font-size: 1em;
+                  font-weight: 200;
             }
 .block{
       display: block;
@@ -161,16 +170,12 @@ span {
       }
 .images-mg-t-80{
       margin-top: 80px;
-      position: relative;
 }
 .image-mg-l-20{
       margin-left:20px;
-      position: relative;
-
 }
 .image-mg-r-20{
       margin-right:20px;
-      position: relative;
 }
 .bg-white{background-color: white;}
 .width-30{width:150px;
