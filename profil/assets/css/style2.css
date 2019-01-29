@@ -1,0 +1,41 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #30334c ;
+    color: #27282e;
+}
+.bg-image {
+    background-image: url('../images/Grace.jpg');
+    margin: auto 0;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+header> img {
+    width: 100%;
+    height: auto;
+}
+header+ div:last-child a:last-child img {
+    height: 3rem;
+    width: 3rem;
+}
+.smedia {
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Content */
+.speech {
+    width: 55%;
+}
+#contact img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+#submit {
+    margin-right: 0;
+    display: block;
+    width: 3rem;
+}
