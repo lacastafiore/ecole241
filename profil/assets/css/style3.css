@@ -3,8 +3,8 @@ body {
     margin: 0;
 }
 #logo {
-    width: 3rem;
-    height: 3rem;
+    width: 3.8rem;
+    height: 3.8rem;
 }
 
 nav a {
@@ -18,8 +18,6 @@ nav a:hover {
     font-family: "gt-sectra";
     src: url(../fonts/gt-sectra.ttf)
 }
-.home-text {
-}
 .home-text p {
     text-align: center;
     font-family: 'gt-sectra', serif;
@@ -32,6 +30,10 @@ nav a:hover {
     margin-bottom:180px;
     margin-top: 50px;
     transition: transform 1s; 
+}
+.simple {
+    color: #FFE902;
+    margin-left: 1.5rem;
 }
 .home-text p:hover {
     transform: translate(20px, 20px);
