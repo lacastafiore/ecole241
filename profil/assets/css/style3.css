@@ -11,7 +11,7 @@ nav a {
     border-bottom: solid 1px rgb(204, 203, 203);
 }
 nav a:hover {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #FFE902;
     text-decoration: none;
 }
 @font-face {
