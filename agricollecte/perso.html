@@ -1,346 +1,59 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Agri-collecte</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Autocomplete Address Search Box using Google Maps Javascript API</title>
+    <style type="text/css">
+        .mapControls {
+            margin-top: 10px;
+            border: 1px solid transparent;
+            border-radius: 2px 0 0 2px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            height: 32px;
+            outline: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #searchMapInput {
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 50%;
+        }
+
+        #searchMapInput:focus {
+            border-color: #4d90fe;
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- navbar -->
-    <nav class="nav-extended bg-green-agri">
-        <div class="nav-wrapper bg-white">
-            <a href="#" class="brand-logo"><img src="images/logot.png" width="130" alt=""></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger text-green-agri"><i class="material-icons">menu</i></a>
-        </div>
-        <div style="text-align:center;">
-            <h4 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Campagnes</h4>
-        </div>
-        <div class="nav-content bg-green-agri">
-            <ul class="tabs tabs-transparent">
-                <li class="tab"><a href="#test1">Crées</a></li>
-                <li class="tab"><a class="active" href="#test2">Participées</a></li>
-                <li class="tab"><a href="#test3">Publiques</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- end navbar -->
-
-    <!-- sidebar -->
-    <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view" style="font-weight: bold;">
-                <div class="background">
-                    <img src="images/10.jpg" alt="exemple">
-                </div>
-                <a href="#user"><img class="circle" src="images/avatar.png" alt="exemple"></a>
-                <a href="#name"><span class="white-text">FADIKPE I. Juste</span></a><br>
-                <a href="#email"><span class="white-text">Agriculteur</span></a>
-                <a href="#"><span class="white-text" style="margin-left: 20%;">Libreville</span></a>
-            </div>
-        </li>
-        <li><a href="#!"><span><i class='fas fa-edit'></i>&nbsp&nbspEditer Profil</span></a></li>
-        <li><a href="#!">Notifications</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="waves-effect" href="index.html">A propos de l'APP</a></li>
-        <li><a class="waves-effect" href="index.html">Déconnexion</a></li>
+    <h1>Autocomplete Address Search Box using Google Maps Javascript API</h1>
+    <input id="searchMapInput" class="mapControls" type="text" placeholder="Entrer votre l">
+    <ul id="geoData">
+        <li>Full Address: <span id="location-snap"></span></li>
+        <li>Latitude: <span id="lat-span"></span></li>
+        <li>Longitude: <span id="lon-span"></span></li>
     </ul>
-    <!-- end sidebar -->
-    <main style="margin: 2%;">
-        <div class="row mt-20 container-fluid">
-            <div class="col s12">
-                <a href="#" data-position="bottom" data-tooltip="Ajouter une campagne" style="margin-left: 85%;" class="tooltipped btn-floating btn-large bg-green-agri waves-effect waves-light"><i
-                        class="material-icons">add</i></a>
-            </div>
-        </div>
-
-
-
-
-
-
-        <section style="border: 1px solid #eceff1; margin-bottom: 7%;padding: 1%;">
-            <div class="w3-cell-row" style="display: flex; margin: 2%">
-
-                <div class="w3-cell" style="width: 30%;display: flex; justify-content: center; align-items: center;">
-
-
-                    <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                        <img class="img-fluid" src="images/1.jpg" alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-                <div class="w3-cell" style="width: 70%; margin-left: 3%; margin-top: 2%; margin-right: 2%;">
-
-                    <h4 class="font-weight-bold mb-3" style="margin-left: 20%;"><strong>--TomLabs--</strong></h4>
-
-                    <p style="margin-left: 2%">Cette campagne porte sur la quête des prix de tomates a Libreville.</p>
-
-                    <p>Par <a><strong>Lorent Ndong.</strong></a> 12/11/2018</p>
-
-
-                </div>
-            </div>
-
-            <div style="text-align: center">
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Modifier</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Gerer</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Partager</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Exporter</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section style="border: 1px solid #eceff1;margin-bottom: 7%;padding: 1%; ">
-            <div class="w3-cell-row" style="display: flex; margin: 2%">
-
-                <div class="w3-cell" style="width: 30%;display: flex; justify-content: center; align-items: center;">
-
-
-                    <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                        <img class="img-fluid" src="images/3.jpg" alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="w3-cell" style="width: 70%; margin-left: 3%; margin-top: 2%; margin-right: 2%;">
-
-
-                    <h4 class="font-weight-bold mb-3" style="margin-left: 20%;"><strong>--Avocato--</strong></h4>
-
-                    <p style="margin-left: 2%">Cette campagne porte sur l'evaluation de la quantité d'avocat transitant
-                        par Franceville.</p>
-
-                    <p>Par <a><strong>Lorent Ndong.</strong></a> 12/11/2018</p>
-
-                </div>
-            </div>
-
-            <div style="text-align: center">
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Modifier</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Gerer</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Partager</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Exporter</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section style="border: 1px solid #eceff1; margin-bottom: 7%;padding: 1%; ">
-            <div class="w3-cell-row" style="display: flex; margin: 2%">
-
-                <div class="w3-cell" style="width: 30%;display: flex; justify-content: center; align-items: center;">
-
-
-                    <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                        <img class="img-fluid" src="images/2.jpg" alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="w3-cell" style="width: 70%; margin-left: 3%; margin-top: 2%; margin-right: 2%;">
-
-
-                    <h4 class="font-weight-bold mb-3" style="margin-left: 15%;"><strong>--Campagne241--</strong></h4>
-
-                    <p style="margin-left: 2%">Cette campagne porte sur la quête des prix de pommes a Port-Gentille.</p>
-
-                    <p>Par <a><strong>Lorent Ndong.</strong></a> 12/11/2018</p>
-
-                </div>
-            </div>
-
-            <div style="text-align: center">
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Modifier</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Gerer</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Partager</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Exporter</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section style="border: 1px solid #eceff1; margin-bottom: 7%;padding: 1%;">
-            <div class="w3-cell-row" style="display: flex; margin: 2%">
-
-                <div class="w3-cell" style="width: 30%;display: flex; justify-content: center; align-items: center;">
-
-
-                    <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                        <img class="img-fluid" src="images/4.jpg" alt="Sample image">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="w3-cell" style="width: 70%; margin-left: 3%; margin-top: 2%; margin-right: 2%;">
-
-
-                    <h4 class="font-weight-bold mb-3" style="margin-left: 15%;"><strong>--Simplon-241--</strong></h4>
-
-                    <p style="margin-left: 2%">Cette campagne porte sur la quête des prix de carotte a Oyem.</p>
-
-                    <p>Par <a><strong>Lorent Ndong.</strong></a> 12/11/2018</p>
-
-                </div>
-            </div>
-
-            <div style="text-align: center">
-                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Modifier</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Gerer</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Partager</button>
-                    <button type="button" class="btn btn-sm w3-hover-green" style="background-color: #009688">Exporter</button>
-                </div>
-            </div>
-
-        </section>
-
-
-
-    </main>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf1T9AybHiE93OIVR5nKTnNwPfalrOI&libraries=places&callback=initMap"
+    async defer></script>
+    <script>
+        function initMap() {
+            var input = document.getElementById('searchMapInput');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.addListener('place_changed', function () {
+                var place = autocomplete.getPlace();
+                document.getElementById('location-snap').innerHTML = place.formatted_address;
+                document.getElementById('lat-span').innerHTML = place.geometry.location.lat();
+                document.getElementById('lon-span').innerHTML = place.geometry.location.lng();
+            });
+        }
+    </script>
 </body>
 
 </html>
-
-
-        <div class="container">
-            <form class="s12 l6">
-                <div class="input-field col s12">
-                    <input type="text" id="test">
-                    <select>
-                        <option value="0">Equipements</option>
-                        <option value="1">Denrées</option>
-                        <option value="2">Fertilisants</option>
-                        <option value="3">Intrants</option>
-                    </select>
-                    <label class="active" for="text">Categories</label>
-        
-        
-                </div>
-        
-            </form>
-            <form class="s12 l6">
-                <div class="input-field col s12">
-                    <input type="text" id="test" placeholder="A saisir. Ex: Igname">
-                    <label class="active" for="text">Spéculation</label>
-                    <select>
-                        <option value="1"></option>
-                        <option value="2">Piment</option>
-                        <option value="3">Manioc</option>
-                        <option value="1">Feuilles de manioc</option>
-                        <option value="2">Riz</option>
-                        <option value="3">Patate</option>
-                    </select>
-                </div>
-        
-            </form>
-            <form class="s12 l6">
-                <div class="input-field col s12">
-                    <input type="text" id="test">
-                    <select>
-                        <option value="1"></option>
-                        <option value="2">Estuaire</option>
-                        <option value="3">Haut-Ogooué</option>
-                        <option value="1">Moyen)Ogooué</option>
-                        <option value="2">Ngounié</option>
-                        <option value="3">Nyanga</option>
-                        <option value="1">Ogoué Ivindo</option>
-                        <option value="2">Ogooué-Lolo</option>
-                        <option value="3">Woleu-Ntem</option>
-                    </select>
-                    <label class="active" for="text">Lieu Ville/Village</label>
-        
-        
-                </div>
-        
-            </form>
-            <form class="s12 l6">
-                <div class="input-field col s12">
-                    <input type="text" id="test" placeholder=francsCFA>
-                    <select>
-                        <option value="0">4000</option>
-                        <option value="1">3000</option>
-                        <option value="2">2000</option>
-                        <option value="3">1000</option>
-                    </select>
-                    <label class="active" for="text">Prix</label>
-        
-        
-                </div>
-        
-            </form>
-            <form class="s12 l6">
-                <div class="input-field col s12">
-                    <input type="text" id="test">
-                    <select>
-                        <option value="">Akebe</option>
-                        <option value="1">Awendje</option>
-                        <option value="2">Mont-Bouêt</option>
-                        <option value="3">Nkembo</option>
-                        <option value="3">La peyrie</option>
-                    </select>
-                    <label class="active" for="text">Marché</label>
-        
-        
-                </div>
-        
-            </form>
-            <form class="s12 l6">
-                <div class="input-field col s12">
-                    <input type="text" id="test">
-                    <select>
-                        <option value="0">1</option>
-                        <option value="1">2</option>
-                        <option value="2">3</option>
-                        <option value="3">4</option>
-                        <option value="4">5</option>
-                        <option value="5">6</option>
-                        <option value="2">7</option>
-                        <option value="3">8</option>
-                        <option value="0">9</option>
-                        <option value="1">10</option>
-                        <option value="2">11</option>
-                        <option value="3">12</option>
-                    </select>
-                    <label class="active" for="text">Unite</label>
-        
-        
-                </div>
-        
-            </form>
-        </div>

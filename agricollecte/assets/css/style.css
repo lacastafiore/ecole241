@@ -1,4 +1,7 @@
-
+body{
+    background: url(../../images/forest.jpg) no-repeat center;
+    background-size: cover;
+}
 /* flexbox */
 .d-flex{display: flex;}
 .justify-content-center{justify-content: center;}
