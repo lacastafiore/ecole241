@@ -1,23 +1,6 @@
-let oka = 'OkaCode';
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
-console.log(oka);
+let dev = 'okaCode';
+let i = 1;
+while ( i < 23 ) {
+    console.log (dev);
+    i++;
+}
