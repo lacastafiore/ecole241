@@ -1,1 +1,1 @@
-console.log(OkaCode)
+console.log("OkaCode")
