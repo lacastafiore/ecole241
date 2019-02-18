@@ -1,1 +1,2 @@
-console.log("OkaCode")
+let a = "OkaCode";
+console.log(a);
