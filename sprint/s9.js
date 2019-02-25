@@ -1,11 +1,7 @@
-let max = 5;
-let nbr;
-let i;
+let max = 5, nbr, i;
 for (i = 1; i < 6; i++) {
-  nbr = prompt(`"Entrez le nombre ${i}"`);
+  nbr = prompt(`"Entrez le nombre ${i}:"`);
    if (nbr > max) {
     max = nbr;
-  } else {
-    max = max;
-  }
+  } 
 } console.log(`${max}`);
