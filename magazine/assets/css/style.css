@@ -47,7 +47,7 @@ li {display: inline;}
 /*DeshiMag*/
 @font-face {
       font-family: "motionpicture";
-      src: url(../fonts/motionpicture/MotionPicture_PersonalUseOnly.ttf)
+      src: url(../fonts/motionpicture/MotionPicture_PersonalUseOnly.ttf);
 }
 
 .deshi-font {
