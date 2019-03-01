@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Agri-collecte</title>
+</head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align">
+                        <img src="images/logo.png" class="w-300" alt="logo">
+                    </p>
+                    <form action="index.html" method="post" class="my-10 px-10">
+                        <!-- premiere ligne -->
+                        <div class="row my-0">
+                            <div class="input-field input-field-reset col s6">
+                                <input style="border-bottom: solid 1px white" type="text" id="nom" class="validate">
+                                <label style="color: white;font-weight: bold" for="nom" data-error="wrong" data-success="right">Nom</label>
+                            </div>
+                            <div class="input-field input-field-reset mb-30 col s6">
+                                <input style="border-bottom: solid 1px white" type="text" id="prenom" class="validate">
+                                <label style="color: white;font-weight: bold" for="prenom" data-error="wrong" data-success="right">Prénom</label>
+                            </div>
+                        </div>
+                        <!-- deuxieme ligne -->
+                        <div class="row my-0">
+                            <div class="input-field input-field-reset col s12">
+                                <input style="border-bottom: solid 1px white" type="email" id="email" class="validate">
+                                <label style="color: white;font-weight: bold" for="email" data-error="wrong" data-success="right"><i class="material-icons">email</i></label>
+                            </div>
+                            <!-- le select -->
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" selected disabled>Organisation</option>
+                                    <option value="ONG">ONG</option>
+                                    <option value="aucune">Aucune</option>
+                                    <option value="cooperative">Coopérative</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field input-field-reset mb-30 col s12">
+                                <input style="border-bottom: solid 1px white" type="text" id="tel" class="validate">
+                                <label style="color: white;font-weight: bold" for="tel" data-error="wrong" data-success="right"><i class="material-icons">local_phone</i></label>
+                            </div>
+                        </div>
+                        <div class="row my-0">
+                            <div class="row my-0">
+                                <div class="input-field input-field-reset col s6">
+                                    <input style="border-bottom: solid 1px white" type="password" id="password" class="validate">
+                                    <label style="color: white;font-weight: bold" for="password" data-error="wrong" data-success="right"><i class="material-icons">lock</i></label>
+                                </div>
+                                <div class="input-field input-field-reset mb-30 col s6">
+                                    <input style="border-bottom: solid 1px white" type="password" id="confirm" class="validate">
+                                    <label style="color: white;font-weight: bold" for="confirm" data-error="wrong" data-success="right">Confirmer</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="btn waves-effect waves-light btn-large bg-green-agri" href="index.html" >S'inscrire</a>
+                    </form>
+                    <small class="text-white">
+                        En créant un compte, vous acceptez nos conditions d'utilisation.
+                    </small>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>

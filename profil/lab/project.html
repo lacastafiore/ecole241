@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kamgoua Grace</title>
+  <link rel="icon" href="assets/images/mylogofinal.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style3.css">
+  <link rel="stylesheet" href="assets/carousel/css/carousel.css">
+  <style>
+    body {
+      background-color: white;
+      position: relative;
+    }
+
+    #under {
+      position: absolute;
+      top: 10rem;
+      z-index: -1;
+      background-color: #FFE902;
+      height: 45vw;
+    }
+
+    h1 {
+      color: black;
+      padding-top: 3rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: black;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      padding-left: 5rem;
+      margin-left: 15rem;
+    }
+
+    main {
+      background-color: #F0F4F4;
+      height: 60vh;
+    }
+    #carousel {
+      margin-top: 1rem;
+    }
+    .buttons {
+      bottom: 3rem;
+    }
+    
+    footer {
+      background-color: #FFE902;
+      height: 5vh;
+    }
+
+    footer::before {
+      height: 5rem;
+      width: auto;
+      background-color: white;
+    }
+
+    footer a {
+      color: black;
+      font-size: .8rem;
+    }
+
+    footer div {
+      margin: auto 0;
+    }
+
+    footer img {
+      width: 1rem;
+      height: 1rem;
+      color: white;
+      margin-right: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-6 position-absolute" id="under">
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="navbar row ">
+        <div class="col-md-1 navbar-nav">
+          <a href="index.html"><img id="logo" src="assets/images/mylogofinal.png" alt=""></a>
+        </div>
+        <nav class="col-md-11 d-flex justify-content-end position-relative">
+          <a class="navbar-link text-body" href="index.html">home</a>
+          <a class="navbar-link  ml-4 text-body border-bottom-dark" href="about.html">about</a>
+          <a class="navbar-link ml-4 text-body" href="about.html#skills">skills</a>
+          <a class="navbar-link ml-4 text-body" href="project.html">project</a>
+          <a class="navbar-link ml-4 text-body" href="">method</a>
+        </nav>
+      </div>
+      <div class="row">
+        <h1 class="col-md-2 offset-md-2 my-4">Projects</h1>
+        <h2 class="col-md-4 my-4">Each and every project I work on, <br> is the reflection of my imagination.</h2>
+      </div>
+      <div class="row">
+        <!-- Carousel des projets -->
+        <main class="col-md-12">
+
+          <div id="carousel">
+
+            <div class="hideLeft">
+              <a href="https://lacastafiore.github.io/ecole241/defi/"><img src="assets/carousel/images/Capture.PNG"></a>
+            </div>
+
+            <div class="prevLeftSecond">
+              <a href="https://maestrodimateo.github.io/ecole241/lettre/my-programs.html#"><img src="assets/carousel/images/Capture8.PNG"></a>
+            </div>
+
+            <div class="prev">
+              <a href="https://lacastafiore.github.io/ecole241/myga/index.html"><img src="assets/carousel/images/Capture3.PNG"></a>
+            </div>
+
+            <div class="selected">
+              <a href="https://lacastafiore.github.io/ecole241/myga/index2.html"><img src="assets/carousel/images/Capture4.PNG"></a>
+            </div>
+
+            <div class="next">
+              <a href="https://lacastafiore.github.io/ecole241/okacode/"><img src="assets/carousel/images/Capture6.PNG"></a>
+            </div>
+
+            <div class="nextRightSecond">
+              <a href="https://lacastafiore.github.io/ecole241/myga/index3.html"><img src="assets/carousel/images/Capture5.PNG"></a>
+            </div>
+
+            <div class="hideRight">
+              <a href="https://lacastafiore.github.io/ecole241/magazine/"><img src="assets/carousel/images/Capture2.PNG"></a>
+            </div>
+
+            <div class="hideRight">
+              <a href="https://lacastafiore.github.io/ecole241/profil/"><img src="assets/carousel/images/Capture7.PNG"></a>
+            </div>
+
+          </div>
+
+          <div class="buttons mt-5 position-absolute" style="color:black; border: black;">
+            <button class="btn btn-outline-dark" id="prev">
+              <</button> <button class="btn btn-outline-dark" id="next">>
+            </button>
+          </div>
+
+        </main>
+
+      </div>
+    </div>
+
+
+    <footer class="row">
+      <div class="col-md-2">
+        <a href=""><img src="assets/icons/phone-call-2.png" alt="">241-02230368</a>
+      </div>
+      <div class="col-md-2">
+        <a href=""><img src="assets/icons/whatsapp.png" alt="">233-570060085</a>
+      </div>
+      <div class="col-md-8 d-flex justify-content-end">
+        <small>&copy; copyright 2018 casta&co</small>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="assets/carousel/js/carousel.js"></script>
+</body>
+
+</html>

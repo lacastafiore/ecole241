@@ -1,0 +1,53 @@
+body{
+    background: url(../../images/forest.jpg) no-repeat center;
+    background-size: cover;
+}
+/* flexbox */
+.d-flex{display: flex;}
+.justify-content-center{justify-content: center;}
+.align-items-center{align-items: center;}
+.justify-content-space-between{ justify-content: space-between;}
+/*text*/
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-justify{text-align: justify;}
+.text-bold{font-weight: bold;}
+
+
+/* colors */
+.text-green-agri{color: #287b05;}
+.bg-green-agri{background-color: #287b05;}
+.bg-white{background-color: white;}
+.text-warning-agri{color: #e65b05;}
+.bg-warning-agri{background-color: #e65b05;}
+.text-beige-agri{color:#f5e4d0;}
+.text-white{color: white;}
+.bg-beige-agri{background-color:#f5e4d0;}
+
+/* tailles */
+.min-vh-100{min-height: 100vh;}
+.w-100{width: 100px;}
+.w-200{width: 200px;}
+.w-300{width: 300px;}
+
+
+
+/* marge */
+.py-10{padding-top: 10px;padding-bottom: 10px}
+.px-10{padding-right: 10px;padding-left: 10px}
+.p-5{padding:5px;}
+.mb-10{margin-bottom: 10px;}
+.mb-30{margin-bottom: 30px;}
+.mt-10{margin-top: 10px;}
+.mt-20{margin-top: 20px;}
+.p-0{padding: 0;}
+.my-10{margin-top: 10px;margin-bottom: 10px}
+.my-0{margin-top: 0;margin-bottom: 0;}
+
+
+
+/* surcharge */
+.btn-large{display: block; width: 100%;}
+.btn-large:hover{background-color: #e65b05;}
+.input-field-reset{padding: 0;}
