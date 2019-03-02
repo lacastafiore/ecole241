@@ -1821,11 +1821,6 @@ textarea:focus {
 	transition: all .5s;
 }
 
-.navbar img {
-	width: 504 px;
-	height: 100px;
-}
-
 .navbar.scrolled {
 	background: #fff;
 	z-index: 999;
