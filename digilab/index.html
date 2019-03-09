@@ -25,7 +25,7 @@
 
     <!-- Page Title
     ======================================== -->
-    <title>Accueil - CYNIC</title>
+    <title>Accueil - DigiLab</title>
 
     <!-- links for favicon
     ======================================== -->
@@ -57,7 +57,8 @@
         gtag('config', 'UA-135890004-1');
     </script>
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <!-- Icon fonts
     ======================================== -->
     <link rel="stylesheet" type="text/css" href="css/miniline.css">
@@ -210,8 +211,8 @@
                                 <ul class="megamenu" style="display: inline-block; margin-left: 680px;">
                                     <li>
                                         <ul class="dropdown-submenu">
-                                            <li><a href="logo-and-branding.html" class="dropdown-item">Cas Clients</a></li>
-                                            <li><a href="website-design.html" class="dropdown-item">Livre Blanc</a></li>
+                                            <li><a href="cas-clients.html" class="dropdown-item">Cas Clients</a></li>
+                                            <li><a href="livre.html" class="dropdown-item">Livre Blanc</a></li>
                                         </ul>
                                         <!-- End of .dropdown-submenu -->
                                     </li>
@@ -229,8 +230,8 @@
                                     <li>
                                         <ul class="dropdown-submenu">
                                             <li><a href="apropo.html" class="dropdown-item">Notre Equipe</a></li>
-                                            <li><a href="logo-and-branding.html" class="dropdown-item">Nos Valeurs</a></li>
-                                            <li><a href="website-design.html" class="dropdown-item">Recrutement</a></li>
+                                            <li><a href="apropo.html" class="dropdown-item">Nos Valeurs</a></li>
+                                            <li><a href="apropo.html" class="dropdown-item">Recrutement</a></li>
                                         </ul>
                                         <!-- End of .dropdown-submenu -->
                                     </li>
@@ -244,8 +245,8 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-btn btn-mid grad-style-cd" href="contact.html" data-toggle="modal"
-                            href="#devi">Devi Gratuit</a>
+                        <a class="nav-link custom-btn btn-mid grad-style-cd" href="devis.html"
+                            href="#devis">Devis Gratuit</a>
                     </li>
                 </ul>
                 <!-- End of .navbar-nav -->
@@ -275,7 +276,52 @@
                 <h1>Vous accompagner</h1>
                 <p class="section-subheading">Dans la digitalisation de votre marque <br>avec une vision orientée
                     business!</p>
-                <a href="portfolio.html" class="custom-btn btn-big grad-style-ef page-scroll">Prendre Rendez-vous</a>
+
+                <a href="portfolio.html" class="custom-btn btn-big grad-style-ef page-scroll mb-4" data-toggle="modal"
+                    data-target="#modalSubscriptionForm">Prendre Rendez-vous
+
+                </a>
+            </div>
+            <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" style="width: 50vw; margin: 0 auto;">
+                        <div class="modal-header text-center">
+                            <h3 class="modal-title w-100 font-weight-bold mb-5">Prenez rendez-Vous</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3" style="border:none;">
+                            <div class="md-form mb-5">
+                                <input type="text" id="form3" class="form-control validate" placeholder="Nom"
+                                    style="width: 100%; font-size: 1.8rem;     line-height: 3rem;     padding: 1.5rem 2rem; color: #69798d; border: 2px solid #f1f0ff; border-radius: 5px; transition: all .5s;">
+                                <label data-error="wrong" data-success="right" for="form3"></label>
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <input type="email" id="form2" class="form-control validate" placeholder="Prénom"
+                                    style="width: 100%; font-size: 1.8rem; line-height: 3rem;  padding: 1.5rem 2rem; color: #69798d; border: 2px solid #f1f0ff; border-radius: 5px; transition: all .5s;">
+                                <label data-error="wrong" data-success="right" for="form2"></label>
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <input type="email" id="form4" class="form-control validate" placeholder="N° Téléphone"
+                                    style="width: 100%; font-size: 1.8rem; line-height: 3rem;  padding: 1.5rem 2rem; color: #69798d; border: 2px solid #f1f0ff; border-radius: 5px; transition: all .5s;">
+                                <label data-error="wrong" data-success="right" for="form4"></label>
+                            </div>
+
+                            <div id="datetimepicker1" class="input-append date">
+                                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text"  style="width: 100%; font-size: 1.8rem; line-height: 3rem;  padding: 1.5rem 2rem; color: #69798d; border: 2px solid #f1f0ff; border-radius: 5px; transition: all .5s;"></input>
+                                    <span class="add-on"></span>
+                                  </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn-mid custom-btn grad-style-cd">Envoyer </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End of .banner-content -->
         </div>
@@ -597,7 +643,7 @@
                             <h2>Besoin d'un site <br> e-Commerce ? </h2>
                             <p>Notre plateforme de services est une réponse pour toutes vos <br> demandes digitales.</p>
                             <div class="btn-container">
-                                <a href="case-studies-details.html" class="custom-btn btn-big grad-style-ab">Projets
+                                <a href="cas-clients.html" class="custom-btn btn-big grad-style-ab">Projets
                                     réalisés</a>
                                 <a href="http://www.youtube.com/watch?v=F85Az1VXbvg" class="video-play-btn video-popup">
                                     <i class="fas fa-play"></i>
@@ -895,8 +941,8 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="text-center">&copy; 2018. All rights reserved by Your
-                    <a href="http://axilweb.com/" target="_blank" rel="noopener">Company LLC</a>.</p>
+                <p class="text-center">&copy; 2018. Tout droit réservé par
+                    <a href="http://axilweb.com/" target="_blank" rel="noopener">DigiLab</a>.</p>
             </div>
             <!-- End of .container -->
         </div>
@@ -1185,9 +1231,7 @@
     <script src="js/vendor/scrollReveal.js"></script>
     <!-- Custom js -->
     <script src="js/main.js"></script>
-</body>
 
-
-<!-- Mirrored from themes.axilweb.com/html/marketo/trendy-big-digital-agency/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Mar 2019 10:27:43 GMT -->
+    <!-- Mirrored from themes.axilweb.com/html/marketo/trendy-big-digital-agency/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Mar 2019 10:27:43 GMT -->
 
 </html>
