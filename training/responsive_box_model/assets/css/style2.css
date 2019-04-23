@@ -1,0 +1,48 @@
+body {
+     padding: 0;
+     margin: 0;
+     background: #242351;
+     color: white;
+     font-family: sans-serif;
+}
+.container {
+     position: absolute;
+     display: flex;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     margin: 0;
+     padding: 0;
+}
+.article {
+     flex: 1;
+     text-align: center;
+
+}
+.article img {
+     height: 10rem;
+     width: 10rem;
+}
+#icon1 {
+     background: #8567D1;
+     height: 10rem;
+     width: 10rem;
+}
+#icon2 {
+     background: #F7973D;
+     height: 10rem;
+     width: 10rem;
+}
+#icon3 {
+     background: #60E219;
+     height: 10rem;
+     width: 10rem;
+}
+#icon4 {
+     background: #F2413E;
+     height: 10rem;
+     width: 10rem;
+}
+.pb {
+     height: 10rem !important;
+}

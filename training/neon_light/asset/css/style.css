@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+.container {
+    background: url(../images/img.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    font-family: Quicksand, sans-serif;
+    font-size: 10rem;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    /* vertical-align: 100px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:  0 0 20px #ff005b;
+}
+
+
