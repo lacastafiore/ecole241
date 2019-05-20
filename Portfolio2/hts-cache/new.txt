@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+17:28:18	253/253	---M-Z	403	error ('Forbidden')	text/html	date:Sun,%2019%20May%202019%2016:28:21%20GMT	http://www.themestarz.net/robots.txt		(from )
+17:28:18	333/333	---M-Z	403	error ('Forbidden')	text/html	date:Sun,%2019%20May%202019%2016:28:21%20GMT	http://www.themestarz.net/html/selfer/?storefront=envato-elements	D:/casta/Templates%20Bank/Portfolio/Portfolio2/www.themestarz.net/html/selfer/index04b9.html	(from )
