@@ -1,4 +1,4 @@
-/* Initialisation */
+j/* Initialisation */
 html, body {
     margin: 0;
     padding: 0;
@@ -122,6 +122,10 @@ main{
 article {
     margin-bottom: 3em;
 }
+article a {
+    text-decoration: none;
+    color: black;
+}
 article h1 {
     font-family: futura-pt-w01-light, sans-serif;
     font-size: 1.7em;
@@ -151,23 +155,69 @@ article p {
     line-height: 1.5em;
     margin-bottom: 1.6em;
 }
+article small:nth-last-child(2) {
+    display: block;
+    font-family: futuralt, sans-serif;
+    margin-bottom: 2.5em;
+}
+article small:nth-last-child(1) a {
+    display: inline-block;
+}
+article small:nth-last-child(1) a:nth-child(1) {
+    margin-right: .5em;
+}
+#partage {
+    text-align: left;    
+}
+#partage span {
+    border-radius: .3em;
+    border: none;
+    color: white;
+    font-family: futura-thin, sans-serif;
+}
+#partage span i {
+    display: inline-block;
+    margin-right: .3em;
+}
+#fbk {
+    background: #4267B2;
+}
+#twit {
+    background: #1DA1F2;
+}
 article:nth-last-of-type(1) {
     margin-bottom: 28px;
 }
-.lire {
-    border: solid 1px;
-    text-align: center;
-    padding: 0.5em 0;
+.comment p:first-of-type {
+    font-family: futura-pt-w01-light, sans-serif;
+    color: #000000;
 }
-.lire a {
-    text-decoration: none;
-    color:#605e5e;
-    font-family: futura-thin, sans-serif;
-    font-size: 0.9em;
-}
-main div:nth-last-child(1) {
-    text-align: center;
+textarea {
     margin-bottom: 1em;
+}
+.comment button {
+    width: 6em;
+    height: 2em;
+    font-family: futura-light-bt, sans-serif;
+    margin-bottom: 4em;
+}
+.bloc-user {
+    display: flex;
+    margin-bottom: 2em;
+}
+.bloc-user img {
+    display: inline-block;
+    height: 4em;
+    width: 4em;
+    color: white;
+}
+.bloc-user div:nth-child(2){
+    padding: .5em 1em;
+    font-family: futura-pt-w01-light, sans-serif;
+}
+.bloc-user small {
+    display: inline-block;
+    margin-left: 1em;
 }
 main div:nth-last-child(1) span {
     border: solid 1px;
@@ -180,34 +230,37 @@ main div:nth-last-child(1) a {
     text-decoration: none;
     color: black;
 }
-.skip1 {
-    color: #979797;
-}
+
+
+
 /* Bloque de droite */
 aside {
     width: 19em;
 }
-aside section:nth-child(1)  {
+aside .section:nth-child(1)  {
     text-align: center;
 }
 #logo {
     height: 10em;
 }
-aside section:nth-child(1) p {
+.section:nth-child(1) p {
     color: #2f2e2e;
     font-family: futura-light-bt;
     font-size: 0.9em;
     margin-bottom: 2em;
 }
-aside section:nth-child(1) span {
+.section a {
+    text-decoration: none;
+}
+.section:nth-child(1) span {
     display: inline-block;
     font-weight: 600;
     margin-left: 0.4em;
 }
-aside section:nth-child(1) p:nth-child(2) {
+.section:nth-child(1) p:nth-child(2) {
     text-align: justify;
 }
-aside section:nth-child(1) div:nth-child(3) {
+.section:nth-child(1) div:nth-child(3) {
     font-family: futuralt, sans-serif;
     font-weight: 300;
     margin-bottom: 0.5em;
@@ -220,19 +273,22 @@ aside section:nth-child(1) div:nth-child(3) {
     display: flex;
     margin-bottom: 0.9em;
 }
-.mini-articles h6 {
-    margin-top: 0;
-    margin-bottom: 0.8em;
+.mini-articles a {
+    text-decoration: none;
+}
+.mini-articles a:hover {
+    color: #536c8a;
 }
 .mini-img {
     margin-right: 0.6em;
 }
-aside section:nth-child(2) img {
+aside .section:nth-child(2) img {
     height: 2.6em;
 }
 .mini-title {
     font-family: futuralt, sans-serif;
     margin-bottom: 1em;
+    color: black;
 }
 .title-da {
     font-family: futura-pt-w01-light, sans-serif;
@@ -245,7 +301,7 @@ aside section:nth-child(2) img {
     font-size:  .7em;
     color: #605e5e;
 }
-aside section:nth-child(3) small {
+aside .section:nth-child(4) small {
     font-family: futuralt, sans-serif;
     display: block;
     font-size: 0.7em;
@@ -296,4 +352,26 @@ footer div:nth-child(2) {
 footer img {
     height: 9em;
     width: 9em;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        width: 31.2em;
+    }
+    header .logo {
+        font-size: 2.2em;
+    }
+    .content-wrap {
+        margin: 1.5em;
+    }
+    article p {
+        width: 30em;
+        margin: 1em 0;
+    }
+    article img {
+        height: 17.5em;
+    }
+    textarea {
+        
+    }
 }

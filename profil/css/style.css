@@ -1,32 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
- Theme Name: Kewll
- Theme URI: http://
- Description: The Multi-Purpose Onepage Portfolio Template
- Author: ui-themez
- Author URI: http://themeforest.net/user/ui-themez
- Version: 1.1
-
- main Font    : Montserrat
-
------------------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-
- == Table Of Content
-
-	01 Basic
-	02 Theme-dark
-	03 Buttons
-	04 Navbar
-	05 Header
-	06 Hero
-	07 Services
-	08 Portfolio
-	09 Blog
-	10 Contact (Update 1.1)
-	11 Footer
-	12 Responsive
- 
 
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -283,6 +254,12 @@ span, a, a:hover {
 }
 
 /* -------------------------------- 
+	Download button 
+-------------------------------- */
+
+}
+
+/* -------------------------------- 
 	bounce animation 
 -------------------------------- */
 @-webkit-keyframes bounce {
@@ -430,8 +407,13 @@ body.theme-dark .contact .info span {
   letter-spacing: 1px;
   position: relative;
   margin: 30px 2px 0;
+  margin-left: 3px;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
+}
+
+#msg {
+  margin-left: 10px;
 }
 .butn:after {
   content: '';

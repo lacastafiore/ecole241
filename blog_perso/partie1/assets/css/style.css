@@ -1,0 +1,317 @@
+/* Initialisation */
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.container {
+    /* background-color: rgb(190, 189, 189); */
+    width: 100%;
+}
+
+/* Initialisation des polices externes */
+@font-face {
+    font-family: futura-light;
+    src: url(../fonts/futura/futura-light-font.ttf);
+}
+@font-face {
+    font-family: futura-light-bt;
+    src: url(../fonts/futura/futura-light-bt.ttf);
+}
+@font-face {
+    font-family: futura-condensedlight;
+    src: url(../fonts/futura/futura-condensedlight.otf);
+}
+@font-face {
+    font-family: futuralt;
+    src: url(../fonts/futura/futuralt.ttf);
+}
+@font-face {
+    font-family: futura-thin;
+    src: url(../fonts/futura/futura-thin.ttf);
+}
+@font-face {
+    font-family: futura-pt-w01-light;
+    src: url(../fonts/futura/futura-pt-w01-light.ttf);
+}
+@font-face {
+    font-family: futura-book-font;
+    src: url(../fonts/futura/futura-book-font.ttf);
+}
+/* Barre de navigation*/
+nav {
+    background: #fff;
+    height: 3.2em;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+}
+nav ul li {
+    margin: 0.8em 1em;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #cccccc;
+    font-family: futura-light-bt, sans-serif;
+    font-size: 0.8em;
+}
+nav ul li a:hover {
+    color: #000;
+}
+nav ul li:nth-child(1) a {
+    color: rgb(96, 94, 94);
+}
+
+/* Header */
+header {
+    background: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 17em;
+}
+header .logo {
+    display: flex;
+    justify-content: center;
+    font-family: futura-pt-w01-light, sans-serif;
+    font-weight: lighter;
+    font-size: 2.8rem;
+    color: rgb(47, 46, 46);
+    letter-spacing: 0.3em;
+    padding-top: 0.4em;
+}
+header .logo span:nth-child(1) {
+    margin-right: 0.3em;
+}
+header .logo span:nth-child(2) {
+    display: inline-block;
+    font-family: futura-pt-w01-light, sans-serif;
+    font-weight: bold;
+}
+
+/* Contenu principal */ 
+
+/* Wrapper */
+.content-wrap {
+    margin: 0 auto;
+    padding-top: 1.5em;
+    display: flex;
+    width: 65%;
+}
+
+/* Contenu de gauche */
+main{ 
+    width: 35em;
+    margin-right: 2.2em;
+}
+.lifestyle {
+    display: inline-block;
+    border: solid 1px #605e5e;
+    padding: .1em .4em;
+}
+.lifestyle:hover {
+    border: solid 1.5px #536c8a;
+}
+.lifestyle a {
+    text-decoration: none;
+    font-family: futura-light-bt, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    color: #605e5e;
+}
+article {
+    margin-bottom: 3em;
+}
+article a {
+    text-decoration: none;
+    color: #000;
+}
+article h1 {
+    font-family: futura-pt-w01-light, sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+}
+article h1 a {
+    text-decoration: none;
+    color: #2f2e2e;
+}
+article h1 a:hover {
+    color: #536c8a;
+}
+.main-date {
+    display: block;
+    font-family: futuralt, sans-serif;
+    margin-bottom: 1em;
+}
+article img {
+    display: block;
+    height: 23.3em;
+}
+article p {
+    font-family: futura-pt-w01-light, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 1.6em;
+}
+article:nth-last-of-type(1) {
+    margin-bottom: 28px;
+}
+.lire {
+    border: solid 1px;
+    text-align: center;
+    padding: 0.5em 0;
+    font-family: futura-thin, sans-serif;
+    font-size: 0.9em;
+}
+.lire:hover {
+    background: #405166;
+    transition: 0.5s;
+    color: #fff;
+}
+.lire a {
+    text-decoration: none;
+    color:#605e5e;
+}
+main div:nth-last-child(1) {
+    text-align: center;
+    margin-bottom: 1em;
+}
+main div:nth-last-child(1) span {
+    border: solid 1px;
+    padding: 5px 9px;
+    font-family: futura-light-bt, sans-serif;
+    font-size: 0.9em;
+    margin-right: 0.3em;
+}
+main div:nth-last-child(1) a {
+    text-decoration: none;
+    color: #000;
+}
+.skip1 {
+    color: #979797;
+}
+/* Bloque de droite */
+aside {
+    width: 19em;
+}
+aside .section:nth-child(1)  {
+    text-align: center;
+}
+#logo {
+    height: 10em;
+}
+.section:nth-child(1) p {
+    color: #2f2e2e;
+    font-family: futura-light-bt;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+.section a {
+    text-decoration: none;
+}
+.section:nth-child(1) span {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 0.4em;
+}
+.section:nth-child(1) p:nth-child(2) {
+    text-align: justify;
+}
+.section:nth-child(1) div:nth-child(3) {
+    font-family: futuralt, sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+.social {
+    display: inline-block;
+    margin: auto 0.3em;
+}
+.mini-articles {
+    display: flex;
+    margin-bottom: 0.9em;
+}
+.mini-articles a {
+    text-decoration: none;
+}
+.mini-articles a:hover {
+    color: #536c8a;
+}
+.mini-img {
+    margin-right: 0.6em;
+}
+aside .section:nth-child(2) img {
+    height: 2.6em;
+}
+.mini-title {
+    font-family: futuralt, sans-serif;
+    margin-bottom: 1em;
+    color: #000;
+}
+.title-da {
+    font-family: futura-pt-w01-light, sans-serif;
+    font-size: .8em;
+    color: #2f2e2e;
+    margin-bottom: 0.7em;
+}
+.mini-articles small {
+    font-family: futura-light-bt, sans-serif;   
+    font-size:  .7em;
+    color: #605e5e;
+}
+aside .section:nth-child(3) small {
+    font-family: futuralt, sans-serif;
+    display: block;
+    font-size: 0.7em;
+    line-height: 2.4em;
+    color: #2f2e2e;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.logo-f {
+    font-family: futura-thin, sans-serif;
+    font-size: 1.4em;
+    letter-spacing: .4em;
+}
+.logo-f span:nth-child(1) {
+    margin-right: .5em;
+}
+.logo-f span:nth-child(2) {
+    font-weight: 600;
+}
+footer small {
+    color: rgba(255, 255, 255, 0.877);
+    font-family: futura-pt-w01-light, sans-serif; 
+    font-size: .8em; 
+}
+footer small span:nth-child(1) {
+    margin-right: .3em;
+}
+footer small span:nth-child(2) {
+    font-weight: 600;
+}
+footer div:nth-child(2) {
+    margin-bottom: .7em;
+}
+.block-img {
+    display: flex;
+    width: 54.8em;
+    margin: 0 auto;
+}
+.block-img div {
+    margin-right: 0.1em;
+}
+footer img {
+    height: 9em;
+    width: 9em;
+}
