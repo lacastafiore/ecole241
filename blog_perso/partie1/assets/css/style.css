@@ -195,6 +195,7 @@ main div:nth-last-child(1) a {
 .skip1 {
     color: #979797;
 }
+
 /* Bloque de droite */
 aside {
     width: 19em;
@@ -244,7 +245,7 @@ aside .section:nth-child(1)  {
 .mini-img {
     margin-right: 0.6em;
 }
-aside .section:nth-child(2) img {
+.mini-img img {
     height: 2.6em;
 }
 .mini-title {
@@ -263,8 +264,10 @@ aside .section:nth-child(2) img {
     font-size:  .7em;
     color: #605e5e;
 }
-aside .section:nth-child(3) small {
+aside .section:nth-child(4) a {
     font-family: futuralt, sans-serif;
+}
+.arch-link {
     display: block;
     font-size: 0.7em;
     line-height: 2.4em;

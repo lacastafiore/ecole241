@@ -1,4 +1,4 @@
-j/* Initialisation */
+/* Initialisation */
 html, body {
     margin: 0;
     padding: 0;
@@ -11,16 +11,8 @@ html, body {
 
 /* Initialisation des polices externes */
 @font-face {
-    font-family: futura-light;
-    src: url(../fonts/futura/futura-light-font.ttf);
-}
-@font-face {
     font-family: futura-light-bt;
     src: url(../fonts/futura/futura-light-bt.ttf);
-}
-@font-face {
-    font-family: futura-condensedlight;
-    src: url(../fonts/futura/futura-condensedlight.otf);
 }
 @font-face {
     font-family: futuralt;
@@ -34,11 +26,10 @@ html, body {
     font-family: futura-pt-w01-light;
     src: url(../fonts/futura/futura-pt-w01-light.ttf);
 }
-@font-face {
-    font-family: futura-book-font;
-    src: url(../fonts/futura/futura-book-font.ttf);
-}
 /* Barre de navigation*/
+.container-fluid {
+    padding: 0;
+}
 nav {
     background: white;
     height: 3.2em;
@@ -193,6 +184,8 @@ article:nth-last-of-type(1) {
     color: #000000;
 }
 textarea {
+    width: 100%;
+    min-height: 85px;
     margin-bottom: 1em;
 }
 .comment button {
@@ -219,19 +212,66 @@ textarea {
     display: inline-block;
     margin-left: 1em;
 }
-main div:nth-last-child(1) span {
+.lire {
+    border: solid 1px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5em 0;
+    font-family: futura-thin, sans-serif;
+    font-size: 0.9em;
+}
+.lire:hover {
+    background: #405166;
+    transition: 0.5s;
+    color: #fff;
+}
+.lire a {
+    text-decoration: none;
+    color:#605e5e;
+}
+.nav-article span {
     border: solid 1px;
     padding: 5px 9px;
     font-family: futura-light-bt, sans-serif;
     font-size: 0.9em;
     margin-right: 0.3em;
 }
-main div:nth-last-child(1) a {
+.nav-article a {
     text-decoration: none;
     color: black;
 }
-
-
+.skip1 {
+    color: #979797;
+}
+.newsletter {
+    margin-top: 4em;
+}
+#news-title {
+    font-family: futura-pt-w01-light, sans-serif;
+    color: #666666;
+    font-size: 1.5rem;
+}
+.newsletter, p, input, button {
+    font-family: futura-pt-w01-light, sans-serif;
+}
+.newsletter p {
+    font-size: 1.3rem;
+}
+.newsletter input {
+    width: 100%;
+    padding: .5em 1em;
+}
+.newsletter button {
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+    width: 100%;
+    font-size: 1em;
+    padding: .6em 0;
+    background: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: .2em;
+}
 
 /* Bloque de droite */
 aside {
@@ -282,7 +322,7 @@ aside .section:nth-child(1)  {
 .mini-img {
     margin-right: 0.6em;
 }
-aside .section:nth-child(2) img {
+.mini-img img {
     height: 2.6em;
 }
 .mini-title {
@@ -301,8 +341,10 @@ aside .section:nth-child(2) img {
     font-size:  .7em;
     color: #605e5e;
 }
-aside .section:nth-child(4) small {
+aside .section:nth-child(4) a {
     font-family: futuralt, sans-serif;
+}
+.arch-link {
     display: block;
     font-size: 0.7em;
     line-height: 2.4em;
@@ -354,24 +396,109 @@ footer img {
     width: 9em;
 }
 /* Media Queries */
-@media screen and (max-width: 768px) {
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 480px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-wrap {
+        flex-direction: column;
+        margin: 1em;
+    }
     header {
-        width: 31.2em;
+        max-width: 100%;
+        background-size: cover;
     }
     header .logo {
         font-size: 2.2em;
     }
-    .content-wrap {
-        margin: 1.5em;
+    .lifestyle {
+        margin-bottom: .5em;
+    }
+    .lifestyle a {
+        font-size: 1.2em;
+    }
+    article h1 {
+        margin-bottom: .5em;
     }
     article p {
-        width: 30em;
-        margin: 1em 0;
+        width: 17.5em;
+        font-size: 1.2em;
     }
     article img {
-        height: 17.5em;
+        height: 14em;
+    }
+    #etiq {
+        font-size: .9em;
     }
     textarea {
-        
+        max-width: 60%;
+    }
+    .comment p {
+        max-width: 60%;
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+    .comment button {
+        display: flex;
+
+    }
+    .bloc-user img {
+        height: 85px;
+        width: 85px;
+        margin-right: 1em;
+    }
+    aside {
+        display: none;
+    }
+    footer {
+        width: 100%;
+    }
+    footer img {
+        display: none;
+    }
+}   
+
+/** Tablettes **/
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    nav {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    nav ul {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .content {
+        max-width: 100%;
+    }
+    .content-wrap {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    main {
+        max-width: 65%;
+    }
+    aside {
+        max-width: 35%;
+    }
+    article img {
+        height: 210px;
+    }
+    block-img {
+        max-width: 100%;
+    }
+    footer {
+        max-width: 100%;
+    }
+    footer img {
+        max-height: 7.6em;
+        max-width: 7.6em;
     }
 }
