@@ -1,11 +1,11 @@
 /* Polices importées */
 @font-face {
     font-family: futura-pt-w01-light;
-    src: url(../../fonts/futura/futura-pt-w01-light.ttf);
+    src: url(../fonts/futura/futura-pt-w01-light.ttf);
 }
 @font-face {
     font-family: futura-light-bt;
-    src: url(../../fonts/futura/futura-light-bt.ttf);
+    src: url(../fonts/futura/futura-light-bt.ttf);
 }
 
 /* Initialisation */
@@ -34,7 +34,7 @@ nav {
 
 /* Header */
 header {
-    background-image: url(../../images/1.png);
+    background-image: url(../images/1.png);
     background-size: cover;
     background-position: center;
     height: 17em;
@@ -73,6 +73,9 @@ header h1 span{
     height: 23.3em;
     width: 35em;
 }
+main div .lire:hover {
+    color: #fff !important;
+}
 #articles button {
     width: 33em;
 }
@@ -82,6 +85,12 @@ header h1 span{
 .com-user{
     height: 64px;
     width: 64px;
+}
+#aut_more:hover {
+    color: #fff !important;
+}
+.voir:hover {
+    color: #fff !important;
 }
 
 /* Newsletter */
