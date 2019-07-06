@@ -406,7 +406,6 @@ body.theme-dark .contact .info span {
 }
 
 #cv {
-  display: inline-block;
   padding: 10px 30px;
   border: 1px solid #eee;
   background: #1c1c1c;
@@ -416,8 +415,7 @@ body.theme-dark .contact .info span {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
-  margin: 0 2px 0;
-  margin-left: 300px;
+  float: right;
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
