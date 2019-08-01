@@ -1,0 +1,126 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+body{
+      background-color: antiquewhite;
+      margin: 0;
+      padding: 0;
+}
+/* .contenu{
+      height: 100vh;
+} */
+.left{
+      width:60%;
+      height: 100vh;
+      background-image: url(../images/Battle8.jpg);
+      float:left;
+      background-size: cover;
+}
+.right{
+      height: 100vh;
+      background-color:#472C31;
+      float:right;
+      width:40%;
+      margin: auto;
+}
+.title{    
+      height:350px;
+      width:500px;
+      margin:150px auto;
+      padding: 20px;
+      text-align: center;
+      background-color:#472C31;
+      opacity: 0.7;
+      border-radius: 10px;
+
+}
+#welcom{
+      font-weight:100;
+}
+.login{
+      background-color:#FF8640;
+      opacity: 0.7;
+      height: 350px;
+      width:400px;
+      margin: 150px auto ;
+      padding: 20px;
+      border-radius: 10px;
+}
+.title h2{
+      color:white;
+      font-family: 'Orbitron', cursive;
+      font-size: 60px;
+      text-align: center;
+      margin-top:150px;
+}
+.battle h1{
+      font-family: 'Hanalei Fill', cursive;
+      font-weight: 400;
+      color:#E45602;
+}
+.gabon2 h1{
+      color:#2BAB00;
+      font-family: 'Hanalei Fill', cursive;
+}
+.gabon4 h1{
+      color:#FFC500;
+      font-family: 'Hanalei Fill', cursive;
+}
+.gabon1 h1{
+      color:#0022E8;
+      font-family: 'Hanalei Fill', cursive;
+}
+.bracket h1{
+      color:white;
+      font-family: 'Orbitron', cursive;
+}
+.title p{
+      color:white;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 30;
+      margin-top:30px;
+      text-align: left;
+}
+p{
+      font-family: 'Orbitron', sans-serif;
+}
+.login h3{
+      font-family: 'Orbitron', sans-serif;  
+      text-align: center;
+      margin-bottom: 90px;
+}
+.login a{
+      color:black;
+      display:inline;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 30;
+
+}
+#login{
+      margin-left:99px;
+}
+#forgot-pass{
+      margin-left:5px;
+}
+.input{
+      margin: 0 auto;
+      display:block;
+      margin-bottom: 20px;
+      width: 200px;
+      height:40px;
+      border:none;
+      border-radius: 10px;
+      text-align: center;
+}
+.submit-button{
+      background-color: rgb(192, 80, 39);
+      color:white;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      border:none;
+      border-radius: 10px;
+      height: 40px;
+      width: 200px;
+}

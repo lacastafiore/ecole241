@@ -1,0 +1,99 @@
+body {
+    color: black;
+    margin: 0;
+}
+#logo {
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+nav a {
+    border-bottom: solid 1px rgb(204, 203, 203);
+}
+nav a:hover {
+    border-bottom: solid 1px #FFE902;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "gt-sectra";
+    src: url(../fonts/gt-sectra.ttf)
+}
+.home-text p {
+    text-align: center;
+    font-family: 'gt-sectra', serif;
+    font-weight: bold;
+    font-size: 7vw;
+    line-height: 48px;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom:180px;
+    margin-top: 50px;
+    transition: transform 1s; 
+}
+.simple {
+    color: #FFE902;
+    margin-left: 1.5rem;
+}
+.home-text p:hover {
+    transform: translate(20px, 20px);
+}
+.yellow {
+    background-color: #FFE902;
+}
+/* Circular Progress Bar*/
+.progress-bar1 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin:0 auto;
+  }  
+  .progress-bar1 div {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .progress-bar1 div span {
+    position: absolute;
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 75px;
+    height: 75px;
+    width: 75px;
+    left: 12.5px;
+    top: 12.5px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+  }
+   
+  .progress-bar1 .background { background-color: #b3cef6; }
+   
+  .progress-bar1 .rotate {
+    clip: rect(0 50px 100px 0);
+    background-color: #4b86db;
+  }
+   
+  .progress-bar1 .left {
+    clip: rect(0 50px 100px 0);
+    opacity: 1;
+    background-color: #b3cef6;
+  }
+   
+  .progress-bar1 .right {
+    clip: rect(0 50px 100px 0);
+    transform: rotate(180deg);
+    opacity: 0;
+    background-color: #4b86db;
+  }
+   
+  @keyframes
+  toggle {  0% {
+   opacity: 0;
+  }
+   100% {
+   opacity: 1;
+  }
+  }  

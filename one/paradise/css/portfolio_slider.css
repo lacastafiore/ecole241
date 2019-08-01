@@ -1,0 +1,695 @@
+/*------------------------------------------------------*/
+/* PORTFOLIO 076
+/*------------------------------------------------------*/
+.portfolio_076_content{
+  background: rgba(67, 161, 212,0.9);	/*---------- Change Color From Here ----------*/
+}
+.portfolio_076{
+  overflow: hidden;
+  position: relative;
+}
+.portfolio_076 > .carousel-inner > .carousel-item{
+  overflow: hidden;
+}
+.portfolio_076 > .carousel-inner > .carousel-item > .row{
+  margin: 0;
+}
+/*---------- LEFT/RIGHT CONTROL ----------*/
+.portfolio_076_control_button .carousel-control-prev,
+.portfolio_076_control_button .carousel-control-next{
+  top: 115px;
+  width: 35px;
+  opacity: 0.5;
+  height: 35px;
+  z-index: 100;
+  bottom: auto;
+  color: #666666;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  overflow: hidden;
+  line-height: 35px;
+  text-shadow: none;
+  position: absolute;
+  background: transparent;
+  border: 1px solid #666666;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.5s cubic-bezier(.075,.82,.165,1);
+  transition: all 0.5s cubic-bezier(.075,.82,.165,1);
+}
+.portfolio_076_control_button .carousel-control-prev{
+  left: auto;
+  right: 62px;
+}
+.portfolio_076_control_button .carousel-control-next{
+  right: 25px;
+ }
+.portfolio_076_control_button .carousel-control-prev:hover,
+.portfolio_076_control_button .carousel-control-next:hover{
+  opacity: 1;
+  color: #ffffff;
+  background: #666666;
+}
+/*---------- BOX ----------*/
+.portfolio_076_header > h1,
+.portfolio_076_header > p,
+.portfolio_076_content > h5 > a,
+.portfolio_076_content > ul > li > a{
+  padding: 0;
+  text-shadow: none;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/*---------- HEADER ----------*/
+.portfolio_076_header{
+  width: 35%;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+.portfolio_076_header > h1{
+  color: #666666;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+.portfolio_076_header > h1:after{
+  left: 0;
+  right: 0;
+  width: 30%;
+  content: "";
+  height: 1px;
+  margin: auto;
+  bottom: -15px;
+  position: absolute;
+  background: #666666;
+}
+.portfolio_076_header > p{
+  color: #666666;
+  font-size: 12px;
+  font-weight: 600;
+}
+/*---------- GRID ----------*/
+.portfolio_076_grid{
+  padding: 25px 0px;
+  background: #000;
+}
+/*---------- GRID FOR MOVING TWO ----------*/
+.portfolio_076_grid_mov_2{
+  padding: 0;
+}
+.portfolio_076_grid_mov_2 > .row{
+  margin: 0;
+}
+.portfolio_076_grid_mov_2 > .row > div{
+  padding: 5px 5px;
+}
+/*---------- WRAPPER ----------*/
+.portfolio_076_wrapper{
+  overflow: hidden;
+  position: relative;
+      text-align: center;
+}
+/*---------- IMAGE ----------*/
+.portfolio_076_wrapper > img{
+}
+/*---------- CONTENT ----------*/
+.portfolio_076_content{
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  left: -100%;
+  width: 100%;
+  padding: 10px;
+  visibility: hidden;
+  text-align: center;
+  position: absolute;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio_076_content > h5{
+  margin: 10% 0 0 0;
+}
+.portfolio_076_content > h5 > a{
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*---------- LIST ----------*/
+.portfolio_076_content > ul{
+  padding: 0;
+  list-style-type: none;
+}
+.portfolio_076_content > ul > li{
+  display: inline-block;
+}
+.portfolio_076_content > ul > li > a{
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/*---------- ICONS ----------*/
+.portfolio_076_link{
+  left: 5px;
+  bottom: 5px;
+  position: absolute;
+}
+.portfolio_076_link > a{
+  width: 35px;
+  height: 35px;
+  color: #ffffff;
+  text-shadow: none;
+  line-height: 35px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.5s cubic-bezier(.075,.82,.165,1);
+  transition: all 0.5s cubic-bezier(.075,.82,.165,1);
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.075,.82,.165,1);
+  animation-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+.portfolio_076_link > a:hover{
+  color: #43a1d4;
+  background: #ffffff;
+}
+/*---------- CONTENT (Two Columns Only) ----------*/
+.portfolio_076_content_col_2 > h5{
+  margin-top: 20%;
+}
+.portfolio_076_content_col_2 > h5 > a{
+  font-size: 50px;
+}
+.portfolio_076_content_col_2 > ul > li > a{
+  font-size: 14px;
+}
+/*---------- CONTENT (Three Columns Only) ----------*/
+.portfolio_076_content_col_3 > h5{
+  margin-top: 20%;
+}
+.portfolio_076_content_col_3 > h5 > a{
+  font-size: 35px;
+}
+.portfolio_076_content_col_3 > ul > li > a{
+  font-size: 14px;
+}
+/*---------- CONTENT (Four Columns Only) ----------*/
+.portfolio_076_content_col_4 > h5{
+  margin-top: 20%;
+}
+.portfolio_076_content_col_4 > h5 > a{
+  font-size: 25px;
+}
+/*---------- CONTENT (Four Columns And Two Move Only) ----------*/
+.portfolio_076_content_col_4_mov_2 > h5{
+  margin-top: 20%;
+}
+.portfolio_076_content_col_4_mov_2 > h5 > a{
+  font-size: 25px;
+}
+
+/*------------------------------------------------------*/
+/* RESPONSIVE
+/*------------------------------------------------------*/
+/*---------- MEDIA 480px ----------*/
+@media only screen and (max-width: 480px){
+  /*---------- CONTROL ----------*/
+  .portfolio_076_control_button .carousel-control-prev,
+  .portfolio_076_control_button .carousel-control-next{
+    display: none;
+  }
+  /*---------- HEADER ----------*/
+  .portfolio_076_header{
+    width: 100%;
+    margin: 0 auto 25px auto;
+  }
+  /*---------- CONTENT ----------*/
+  .portfolio_076_content > h5{
+    margin-top: 18%;
+  }
+  .portfolio_076_content > h5 > a{
+    font-size: 20px;
+  }
+  /*---------- LIST ----------*/
+  .portfolio_076_content > ul > li > a{
+    font-size: 14px;
+  }
+}
+/*---------- MEDIA 576px - 768px ----------*/
+@media (min-width: 576px) and (max-width: 768px){
+  /*---------- Two Columns ----------*/
+  .prtfl_076_mov_all_col_2{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_2 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_2 .portfolio_076_content > h5{
+    margin: 10px 0;
+  }
+  .prtfl_076_mov_all_col_2 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 20px;
+  }
+  .prtfl_076_mov_all_col_2 .portfolio_076_content > ul{
+    margin: 0;
+  }
+  /*---------- Three Columns ----------*/
+  .prtfl_076_mov_all_col_3{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_content > h5{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 16px;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_content > ul{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_content > ul > li > a{
+    font-size: 12px;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_link{
+    left: 2px;
+    bottom: 2px;
+  }
+  .prtfl_076_mov_all_col_3 .portfolio_076_link > a{
+    width: 22px;
+    height: 22px;
+	font-size: 10px;
+    line-height: 22px;
+  }
+  /*---------- Four Columns ----------*/
+  .prtfl_076_mov_all_col_4{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_content > h5{
+    margin: 10px 0;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 20px;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_content > ul{
+    margin: 0;
+  }
+  /*---------- Five Columns ----------*/
+  .prtfl_076_mov_all_col_5{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_content > h5{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 12px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_content > ul{
+    display: none;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_link{
+    left: 2px;
+    bottom: 2px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_link > a{
+    width: 22px;
+    height: 22px;
+	font-size: 10px;
+    line-height: 22px;
+  }
+  /*---------- Six Columns ----------*/
+  .prtfl_076_mov_all_col_6{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_content > h5{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 14px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_content > ul{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_content > ul > li > a{
+    font-size: 12px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_link{
+    left: 2px;
+    bottom: 2px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_link > a{
+    width: 22px;
+    height: 22px;
+	font-size: 10px;
+    line-height: 22px;
+  }
+}
+/*---------- MEDIA 481px - 768px ----------*/
+@media (min-width: 481px) and (max-width: 768px){
+  /*---------- HEADER ----------*/
+  .portfolio_076_header{
+    width: 60%;
+  }
+  /*---------- CONTENT ----------*/
+  .portfolio_076_content > h5{
+    margin-top: 20%;
+  }
+  .portfolio_076_content > h5 > a{
+    font-size: 35px;
+  }
+  /*---------- LIST ----------*/
+  .portfolio_076_content > ul > li > a{
+    font-size: 18px;
+  }
+}
+/*---------- MEDIA 769px - 992px ----------*/
+@media (min-width: 769px) and (max-width: 992px){
+  /*---------- HEADER ----------*/
+  .portfolio_076_header{
+    width: 60%;
+  }
+  /*---------- CONTENT (Two Columns Only) ----------*/
+  .portfolio_076_content_col_2 > h5 > a{
+    font-size: 30px;
+  }
+  /*---------- CONTENT (Three Columns Only) ----------*/
+  .portfolio_076_content_col_3 > h5{
+    margin-top: 5%;
+  }
+  .portfolio_076_content_col_3 > h5 > a{
+    font-size: 20px;
+  }
+  .portfolio_076_content_col_3 > ul > li > a{
+    font-size: 14px;
+  }
+  /*---------- CONTENT (Four Columns And Two Moves) ----------*/
+  .portfolio_076_content_col_4_mov_2 > h5{
+    margin: 5% 0 0 0;
+  }
+  .portfolio_076_content_col_4_mov_2 > h5 > a{
+    font-size: 16px;
+  }
+  .portfolio_076_content_col_4_mov_2 > ul{
+    font-size: 0;
+  }
+  /*---------- CONTENT (Six Columns And Two Moves) ----------*/
+  .portfolio_076_content_col_6_mov_2{
+    padding: 3px;
+  }
+  .portfolio_076_content_col_6_mov_2 > h5{
+    margin: 0;
+  }
+  .portfolio_076_content_col_6_mov_2 > h5 > a{
+    font-size: 10px;
+  }
+  .portfolio_076_content_col_6_mov_2 > ul{
+    font-size: 0;
+  }
+  .portfolio_076_content_col_6_mov_2 > ul > li > a{
+    font-size: 9px;
+  }
+  .portfolio_076_content_col_6_mov_2 > .portfolio_076_link{
+    left: 1px;
+    bottom: 1px;
+  }
+  .portfolio_076_content_col_6_mov_2 > .portfolio_076_link > a{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  /*---------- Four Columns ----------*/
+  .prtfl_076_mov_all_col_4{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_content > h5{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 16px;
+  }
+  .prtfl_076_mov_all_col_4 .portfolio_076_content > ul{
+    margin: 0;
+  }
+  /*---------- Five Columns ----------*/
+  .prtfl_076_mov_all_col_5{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_content > h5{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 12px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_content > ul{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_link{
+    left: 2px;
+    bottom: 2px;
+  }
+  .prtfl_076_mov_all_col_5 .portfolio_076_link > a{
+    width: 22px;
+    height: 22px;
+	font-size: 10px;
+    line-height: 22px;
+  }
+  /*---------- Six Columns ----------*/
+  .prtfl_076_mov_all_col_6{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_grid{
+    padding: 1px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_content > h5{
+    margin: 0;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_grid .portfolio_076_content > h5 > a{
+    display: block;
+	font-size: 12px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_content > ul{
+    display: none;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_link{
+    left: 2px;
+    bottom: 2px;
+  }
+  .prtfl_076_mov_all_col_6 .portfolio_076_link > a{
+    width: 22px;
+    height: 22px;
+	font-size: 10px;
+    line-height: 22px;
+  }
+}
+/*---------- MEDIA 993px - 1200px ----------*/
+@media (min-width: 993px) and (max-width: 1200px){
+  /*---------- HEADER ----------*/
+  .portfolio_076_header{
+    width: 45%;
+  }
+  .portfolio_076_content > h5{
+    margin: 7% 0 0 0;
+  }
+  .portfolio_076_content > ul{
+    font-size: 0;
+  }
+  .portfolio_076_content > ul > li > a{
+    font-size: 9px;
+  }
+  .portfolio_076_link{
+    left: 2px;
+    bottom: 2px;
+  }
+  .portfolio_076_link > a{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+  /*---------- CONTENT (Two Columns Only) ----------*/
+  .portfolio_076_content_col_2 > h5{
+    margin-top: 20%;
+  }
+  .portfolio_076_content_col_2 > h5 > a{
+    font-size: 40px;
+  }
+  .portfolio_076_content_col_2 > ul > li > a{
+    font-size: 14px;
+  }
+  /*---------- CONTENT (Three Columns Only) ----------*/
+  .portfolio_076_content_col_3 > h5{
+    margin-top: 20%;
+  }
+  .portfolio_076_content_col_3 > h5 > a{
+    font-size: 30px;
+  }
+  .portfolio_076_content_col_3 > ul > li > a{
+    font-size: 12px;
+  }
+  /*---------- CONTENT (Four Columns Only)  ----------*/
+  .portfolio_076_content_col_4 > h5{
+    margin-top: 15%;
+  }
+  .portfolio_076_content_col_4 > h5 > a{
+    font-size: 15px;
+  }
+  .portfolio_076_content_col_4 > ul > li > a{
+    font-size: 12px;
+  }
+  /*---------- CONTENT (Four Columns And Two Moves) ----------*/
+  .portfolio_076_content_col_4_mov_2 > ul > li > a{
+    font-size: 12px;
+  }
+  .portfolio_076_content_col_4_mov_2 > h5{
+    margin: 20% 0 0 0;
+  }
+  .portfolio_076_content_col_4_mov_2 > h5 > a{
+    font-size: 16px;
+  }
+  .portfolio_076_content_col_4_mov_2 > ul{
+    font-size: 0;
+  }
+}
+
+/*--------------------------------------------*/
+/* SLIDING TIMING FUNCTIONS
+/*--------------------------------------------*/
+/*----- ps_ease -----*/
+.ps_ease .carousel-item{
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/*----- ps_easeInOut -----*/
+.ps_easeInOut .carousel-item{
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/*----- ps_speedy -----*/
+.ps_speedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0,1,0,1);
+  transition-timing-function: cubic-bezier(0,1,0,1);
+}
+/*----- ps_slowSpeedy -----*/
+.ps_slowSpeedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.3,1,0,1);
+  transition-timing-function: cubic-bezier(0.3,1,0,1);
+}
+/*----- ps_easeOutInCubic -----*/
+.ps_easeOutInCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+/*----- ps_swing -----*/
+.ps_swing .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  transition-timing-function: cubic-bezier(.02,.01,.47,1);
+}
+/*----- ps_easeOutCubic -----*/
+.ps_easeOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+/*----- ps_easeInOutCubic -----*/
+.ps_easeInOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.645,.045,.355,1);
+  transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+/*----- ps_easeOutCirc -----*/
+.ps_easeOutCirc .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+/*----- ps_easeOutExpo -----*/
+.ps_easeOutExpo .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+/*----- ps_easeInQuad -----*/
+.ps_easeInQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+  transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+}
+/*----- ps_easeOutQuad -----*/
+.ps_easeOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+}
+/*----- ps_easeInOutQuad -----*/
+.ps_easeInOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+  transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+}
+/*----- ps_easeOutQuart -----*/
+.ps_easeOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+/*----- ps_easeInOutQuart -----*/
+.ps_easeInOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.77,0,.175,1);
+  transition-timing-function: cubic-bezier(.77,0,.175,1);
+}
+/*----- ps_easeOutQuint -----*/
+.ps_easeOutQuint .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
+  transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+/*----- ps_easeInSine -----*/
+.ps_easeInSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.47,0,.745,.715);
+  transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+/*----- ps_easeOutSine -----*/
+.ps_easeOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  transition-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+/*----- ps_easeInOutSine -----*/
+.ps_easeInOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+  transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+}

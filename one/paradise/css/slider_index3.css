@@ -1,0 +1,633 @@
+/*------------------------------------------------------*/
+/* JAVASCRIPT FORM 031
+/*------------------------------------------------------*/
+#js_frm_031 {
+  overflow: hidden;
+  max-height: 658px;
+  position: relative;
+  background: #000000;
+}
+#js_frm_031:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#js_frm_031:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#js_frm_031 > .carousel-inner > .carousel-item > img,
+#js_frm_031 > .carousel-inner > .carousel-item > a > img {
+  width: 100%;
+  opacity: 0.8;
+  margin: auto;
+}
+/*---------- LEFT/RIGHT CONTROL ----------*/
+.ps_control_xlongicon .carousel-control-prev,
+.ps_control_xlongicon .carousel-control-next{
+  top: 47%;
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+  z-index: 100;
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  line-height: 45px;
+  text-shadow: none;
+  position: absolute;
+  font-weight: normal;
+  background: transparent;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.ps_control_xlongicon:hover .carousel-control-prev,
+.ps_control_xlongicon:hover .carousel-control-next{
+  opacity: 1;
+}
+.ps_control_xlongicon .carousel-control-prev{
+  left: 1%;
+}
+.ps_control_xlongicon .carousel-control-next{
+  right: 1%;
+}
+.ps_control_xlongicon .carousel-control-prev:hover,
+.ps_control_xlongicon .carousel-control-next:hover{
+  color: #448aff;
+}
+.ps_control_xlongicon .carousel-control-prev > span:nth-child(1){
+  margin-right: 0;
+}
+.ps_control_xlongicon .carousel-control-next > span:nth-child(1){
+  margin-left: 0;
+}
+/*---------- SLIDE CAPTION ----------*/
+.js_frm_signup{
+  top: 10%;
+  right: 0;
+  left: 10%;
+  width: 350px;
+  padding: 25px;
+  overflow: hidden;
+  text-align: left;
+  position: absolute;
+  background: #2c2c2c;
+  -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,1);
+  box-shadow: 0px 0px 20px 4px rgba(0,0,0,1);
+}
+.js_frm_signup_right{
+  top: 20%;
+  right: 8%;
+  left: auto;
+}
+.js_frm_signup_center{
+  top: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.js_frm_signup_white{
+  background: #00000075;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.75);
+}
+.js_frm_signup_transparent{
+  background: transparent;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.75);
+}
+.js_frm_signup > h3{
+  color: #4e4e4e;
+  font-size: 20px;
+  text-shadow: none;
+  margin: 0 0 25px 0;
+  position: relative;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: normal;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup_white > h3{
+  color: #fff;
+}
+.js_frm_signup_transparent > h3{
+  color: #ffffff;
+}
+.js_frm_signup > h3:after{
+  left: 0;
+  width: 100%;
+  content: "";
+  right: atuo;
+  height: 1px;
+  margin: auto;
+  bottom: -3px;
+  position: absolute;
+  background: #4e4e4e;
+}
+.js_frm_signup_white > h3:after{
+  background: #2f3336;
+}
+.js_frm_signup_transparent > h3:after{
+  background: #ffffff;
+}
+.js_frm_signup > form > button,
+.js_frm_signup > form > button:focus{
+  outline: none;
+  color: #4e4e4e;
+  font-size: 14px;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 7px 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-color: #4e4e4e;
+  background: transparent;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup_white > form > button,
+.js_frm_signup_white > form > button:focus{
+  color: #ffffff;
+  border-color: #448aff;
+  background: #448aff;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+.js_frm_signup_transparent > form > button,
+.js_frm_signup_transparent > form > button:focus{
+  color: #ffffff;
+  border-color: #ffffff;
+  background: transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.js_frm_signup > form > button:hover,
+.js_frm_signup > form > button:active{
+  outline: none !important;
+  color: #ffda50 !important;
+  background: transparent !important;
+  border-color: #ffda50 !important;
+}
+.js_frm_signup_white > form > button:hover,
+.js_frm_signup_white > form > button:active{
+  color: #448aff !important;
+  background: transparent !important;
+  border-color: #448aff !important;
+}
+.js_frm_signup_transparent > form > button:hover,
+.js_frm_signup_transparent > form > button:active{
+  color: #000000 !important;
+  background: transparent !important;
+  border-color: #000000 !important;
+}
+.js_frm_signup > form > div > input{
+  height: 42px;						/*---------- height is essential to show placeholder in firefox ----------*/
+  color: #ffda50;
+  font-size: 14px;
+  padding: 0 20px;
+  background: #2c2c2c;
+  border-color: #4e4e4e;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-transition: all .5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all .5s cubic-bezier(0.22,0.81,0.01,0.99);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup_white > form > div > input{
+  color: #2f3336;
+  background: #f5f5f5;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+.js_frm_signup_transparent > form > div > input{
+  color: #ffffff;
+  background: transparent;
+  border-color: #ffffff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.js_frm_signup > form > div > input:focus {
+  outline: none;
+  border: 1px solid #ffda50;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.js_frm_signup_white > form > div > input:focus {
+  border: 1px solid #448aff;
+}
+.js_frm_signup_transparent > form > div > input:focus {
+  border: 1px solid #000000;
+}
+/*---------- PLACE HOLDER ----------*/
+.js_frm_signup > form > div > input::-webkit-input-placeholder{
+  color: #4e4e4e;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup > form > div > input::-moz-placeholder{
+  color: #4e4e4e;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup > form > div > input:-ms-input-placeholder{
+  color: #4e4e4e;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup > form > div > input:-moz-placeholder{
+  color: #4e4e4e;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup_transparent > form > div > input::-webkit-input-placeholder{
+  color: #ffffff;
+}
+.js_frm_signup_transparent > form > div > input::-moz-placeholder{
+  color: #ffffff;
+}
+.js_frm_signup_transparent > form > div > input:-ms-input-placeholder{
+  color: #ffffff;
+}
+.js_frm_signup_transparent > form > div > input:-moz-placeholder{
+  color: #ffffff;
+}
+.js_frm_signup > form > div > input:focus::-webkit-input-placeholder{
+  color: #ffda50;
+}
+.js_frm_signup > form > div > input:focus::-moz-placeholder{
+  color: #ffda50;
+}
+.js_frm_signup > form > div > input:focus:-ms-input-placeholder{
+  color: #ffda50;
+}
+.js_frm_signup > form > div > input:focus:-moz-placeholder{
+  color: #ffda50;
+}
+.js_frm_signup_white > form > div > input:focus::-webkit-input-placeholder{
+  color: #448aff;
+}
+.js_frm_signup_white > form > div > input:focus::-moz-placeholder{
+  color: #448aff;
+}
+.js_frm_signup_white > form > div > input:focus:-ms-input-placeholder{
+  color: #448aff;
+}
+.js_frm_signup_white > form > div > input:focus:-moz-placeholder{
+  color: #448aff;
+}
+.js_frm_signup_transparent > form > div > input:focus::-webkit-input-placeholder{
+  color: #000000;
+}
+.js_frm_signup_transparent > form > div > input:focus::-moz-placeholder{
+  color: #000000;
+}
+.js_frm_signup_transparent > form > div > input:focus:-ms-input-placeholder{
+  color: #000000;
+}
+.js_frm_signup_transparent > form > div > input:focus:-moz-placeholder{
+  color: #000000;
+}
+/*---------- CHECKBOX ----------*/
+.js_frm_signup > form > .checkbox{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.js_frm_signup > form > .checkbox label{
+  color: #4e4e4e;
+  cursor: initial;
+  font-size: 14px;
+  min-height: auto;
+  font-weight: 300;
+  padding-left: 3px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+}
+.js_frm_signup_white > form > .checkbox label{
+  color: #fff;
+}
+.js_frm_signup_transparent > form > .checkbox label{
+  color: #ffffff;
+}
+.js_frm_signup > form > .checkbox label > a{
+  color: #aa9135;
+  text-transform: capitalize;
+}
+.js_frm_signup_white > form > .checkbox label > a{
+  color: #448aff;
+}
+.js_frm_signup_transparent > form > .checkbox label > a{
+  color: #ffffff;
+}
+.js_frm_signup > form > .checkbox > div{
+  width: 12px;
+  height: 12px;
+  position: relative;
+  display: inline-block;
+}
+.js_frm_signup > form > .checkbox input[type="checkbox"]{
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 5;
+  opacity: 0;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  vertical-align: middle;
+}
+.js_frm_signup > form > .checkbox > div > span{
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background: transparent;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  background: transparent;
+  border: 1px solid #4e4e4e;
+  border-radius: 0;
+}
+.js_frm_signup_white > form > .checkbox > div > span{
+  background: #f5f5f5;
+  border: 1px solid #a2a4a5;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.js_frm_signup_transparent > form > .checkbox > div > span{
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.js_frm_signup > form > .checkbox input[type=checkbox]:checked + span {
+  background: transparent;
+}
+.js_frm_signup > form > .checkbox input:checked + span {
+  border: 1px solid #ffda50;
+}
+.js_frm_signup_white > form > .checkbox input:checked + span {
+  border: 1px solid #b43929;
+}
+.js_frm_signup_transparent > form > .checkbox input:checked + span {
+  border: 1px solid #000000;
+}
+.js_frm_signup > form > .checkbox input:checked + span:before {
+    opacity: 1;
+}
+.js_frm_signup > form > .checkbox input + span:before {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  color: #ffda50;
+  content: '\f00c';
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  position: absolute;
+  vertical-align: middle;
+  font-family: FontAwesome;
+  -webkit-transition: all .5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all .5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.js_frm_signup_white > form > .checkbox input + span:before {
+  color: #448aff;
+}
+.js_frm_signup_transparent > form > .checkbox input + span:before {
+  color: #000000;
+}
+
+/*------------------------------------------------------*/
+/* RESPONSIVE
+/*------------------------------------------------------*/
+
+/*---------- MEDIA 480px ----------*/
+@media only screen and (max-width: 480px){
+  /*---------- WRAPPER ----------*/
+  #js_frm_031 {
+    height: 550px;
+  }
+  #js_frm_031 > .carousel-inner,
+  #js_frm_031 > .carousel-inner > .carousel-item{
+    height: 550px;
+  }
+  #js_frm_031 > .carousel-inner > .carousel-item > img,
+  #js_frm_031 > .carousel-inner > .carousel-item > a > img {
+    height: 100%;
+  }
+  /*---------- LEFT/RIGHT CONTROL ----------*/
+  .ps_control_xlongicon .carousel-control-prev,
+  .ps_control_xlongicon .carousel-control-next{
+    display: none;
+  }
+  /*---------- SLIDE CAPTION ----------*/
+  .js_frm_signup{
+    top: 36;
+    left: 0;
+	margin: auto;
+    width: 290px;
+    padding: 20px;
+	opacity: 0.8;
+  }
+  .js_frm_signup > form label{
+    font-size: 11px !important;
+  }
+}
+
+/*---------- MEDIA 481px - 600px ----------*/
+@media (min-width: 481px) and (max-width: 600px) {
+  /*---------- WRAPPER ----------*/
+  #js_frm_031 {
+    height: 475px;
+  }
+  #js_frm_031 > .carousel-inner,
+  #js_frm_031 > .carousel-inner > .carousel-item{
+    height: 475px;
+  }
+  #js_frm_031 > .carousel-inner > .carousel-item > img,
+  #js_frm_031 > .carousel-inner > .carousel-item > a > img {
+    height: 100%;
+  }
+  /*---------- SLIDE CAPTION ----------*/
+  .js_frm_signup{
+    top: 1%;
+	opacity: 0.8;
+  }
+}
+
+/*---------- MEDIA 601px - 767px ----------*/
+@media (min-width: 601px) and (max-width: 767px) {
+  /*---------- WRAPPER ----------*/
+  #js_frm_031 {
+    height: 475px;
+  }
+  #js_frm_031 > .carousel-inner,
+  #js_frm_031 > .carousel-inner > .carousel-item{
+    height: 475px;
+  }
+  #js_frm_031 > .carousel-inner > .carousel-item > img,
+  #js_frm_031 > .carousel-inner > .carousel-item > a > img {
+    height: 100%;
+  }
+  /*---------- SLIDE CAPTION ----------*/
+  .js_frm_signup{
+    top: 1%;
+	opacity: 0.8;
+  }
+}
+
+/*---------- MEDIA 768px - 875px ----------*/
+@media (min-width: 768px) and (max-width: 875px) {
+  /*---------- SLIDE CAPTION ----------*/
+  .js_frm_signup{
+    top: 5%;
+  }
+}
+
+/*--------------------------------------------*/
+/* SLIDING TIMING FUNCTIONS
+/*--------------------------------------------*/
+/*----- ps_ease -----*/
+.ps_ease .carousel-item{
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/*----- ps_easeInOut -----*/
+.ps_easeInOut .carousel-item{
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/*----- ps_speedy -----*/
+.ps_speedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0,1,0,1);
+  transition-timing-function: cubic-bezier(0,1,0,1);
+}
+/*----- ps_slowSpeedy -----*/
+.ps_slowSpeedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.3,1,0,1);
+  transition-timing-function: cubic-bezier(0.3,1,0,1);
+}
+/*----- ps_easeOutInCubic -----*/
+.ps_easeOutInCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+/*----- ps_swing -----*/
+.ps_swing .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  transition-timing-function: cubic-bezier(.02,.01,.47,1);
+}
+/*----- ps_easeOutCubic -----*/
+.ps_easeOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+/*----- ps_easeInOutCubic -----*/
+.ps_easeInOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.645,.045,.355,1);
+  transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+/*----- ps_easeOutCirc -----*/
+.ps_easeOutCirc .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+/*----- ps_easeOutExpo -----*/
+.ps_easeOutExpo .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+/*----- ps_easeInQuad -----*/
+.ps_easeInQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+  transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+}
+/*----- ps_easeOutQuad -----*/
+.ps_easeOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+}
+/*----- ps_easeInOutQuad -----*/
+.ps_easeInOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+  transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+}
+/*----- ps_easeOutQuart -----*/
+.ps_easeOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+/*----- ps_easeInOutQuart -----*/
+.ps_easeInOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.77,0,.175,1);
+  transition-timing-function: cubic-bezier(.77,0,.175,1);
+}
+/*----- ps_easeOutQuint -----*/
+.ps_easeOutQuint .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
+  transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+/*----- ps_easeInSine -----*/
+.ps_easeInSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.47,0,.745,.715);
+  transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+/*----- ps_easeOutSine -----*/
+.ps_easeOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  transition-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+/*----- ps_easeInOutSine -----*/
+.ps_easeInOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+  transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+}
